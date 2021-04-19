@@ -1,13 +1,13 @@
 # harmonic_content_code
 code and software documentation for the Harmonic Content installation
 # teensy pinouts
-3.3V pin --> out to DAC DVCC and pots VCC
-GND --> DAC gnd, pots gnd, jacks gnd
-*spi pins*
-11 - sync
-12 - sda (data out)
-13 - sck (clock)
-*pot pins*
+3.3V pin --> out to DAC DVCC and pots VCC  
+GND --> DAC gnd, pots gnd, jacks gnd  
+*spi pins*  
+11 - sync  
+12 - sda (data out)  
+13 - sck (clock)  
+*pot pins*  
 14 (A0) - pot 1
 15 (A1) - pot 2
 16 (A2) - pot 3
