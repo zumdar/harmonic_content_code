@@ -1,0 +1,8 @@
+TVS
+recommended:  PRTR5V0U2X,215
+
+
+12V 0.5W zener: MMSZ4699T1GOSCT-ND
+
+I would love it if Duolingo had some extra hard modes where you have to hear an audio in the language you are learning and say it back into your native language, or visa versa. But it should show the audio it heard in text form and give you the option to rerecord so that it doesnt mishear you and count it as a mistake
+Another cool exercise for some of the lessons that are vocabulary heavy rather than grammar heavy would be to have it ask you a question in the language you are learning like, "What are three foods?" and you can type or respond verbally three foods you remember
