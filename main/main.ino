@@ -10,11 +10,11 @@
  * Pinouts
  * 0    SPI_1 (CS)
  * 1    SPI_1 (MISO)
- * 2
- * 3
- * 4
- * 5
- * 6
+ * 2    power LED
+ * 3    warning LED
+ * 4    Error LED
+ * 5    Comm LED (SPI)
+ * 6    Tune button
  * 7    MIDI (Receive)
  * 8    MIDI (Transmit)
  * 9
@@ -53,10 +53,10 @@
  */
 
 // SPI 0
-const int CS1 = 10;
-const int MISO1 = 12;
-const int MOSI1 = 11;
-const int SCK1 = 13;
+const int CS0 = 10;
+const int MISO0 = 12;
+const int MOSI0 = 11;
+const int SCK0 = 13;
 
 // SPI 1
 const int CS1 = 0;
@@ -81,6 +81,10 @@ const int AnalogInput12 = 38;
 const int AnalogInput13 = 39;
 const int AnalogInput14 = 40;
 const int AnalogInput15 = 41;
+const int AnalogInputs[] = [14,15,16,17,18,19,20,21,22,23,24,26,38,39,40,41];
+
+//Outputs
+const int tuner = 6;
 
 
 //Private variables-----------------------------------------------------
@@ -94,12 +98,33 @@ int inputTime;
 
 //Private functions-----------------------------------------------------
 /*
+ * DAC SPI data transfer
+ * @param address: address of data
+ * @param value: value to be sent
+ */
+int dacWrite(int address, int value) {
+  digitalWrite(CS0, LOW);
+  SPI.transfer(address);
+  SPI.transfer(value);
+  // take the SS pin high to de-select the chip:
+  digitalWrite(CS0, HIGH);
+  return 0;
+}
+ 
+/*
  * tunes oscillators
  * @param: None
  * @return: None
  */
 void tuneOscillators()
 {
+  dacWrite(0, 1); //Write A to DAC ocsllator output
+  dacWrite(1, 1);
+  dacWrite(2, 1);
+  dacWrite(3, 1);
+  digitalWrite(Tuner, HIGH);
+  delay(200);
+  digitalWrite(Tuner, LOW);
   return;
 }
 
@@ -110,8 +135,13 @@ void tuneOscillators()
  */
 bool detectUserInput()
 {
-  //note thread
-  return true;
+  int inputThreshold = 0;
+  for(int i = 0, i < 16; i++)
+  {
+    if(inputThreshold <= AnalogRead(AnalogInputs[i]))
+      return true;
+  }
+  return false;
 }
 
 /*
@@ -142,9 +172,19 @@ void userPlay()
 
 //Main Program-----------------------------------------------------------
 void setup() {
-  SPI.beginTransaction(SPISettings(14000000, MSBFIRST, SPI_MODE0));
   Serial.begin(9600);
-  //inputs outputs
+  
+  //SPI Setup
+  pinMode(CS0, OUTPUT);
+  digitalWrite(CS0, HIGH);
+  SPI.begin();
+  SPI.beginTransaction(SPISettings(100000000, MSBFIRST, SPI_MODE1));
+
+  //Output Setup
+  pinMode(Tuner, OUTPUT);
+  digitalWrite(Tuner, LOW);
+
+  //State Machine
   curr_state = idle;
 }
 
