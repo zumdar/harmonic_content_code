@@ -992,7 +992,7 @@ U 1 1 6188DECB
 P 7450 1550
 F 0 "J?" H 7500 2467 50  0000 C CNN
 F 1 "Conn_02x16_Top_Bottom" H 7500 2376 50  0000 C CNN
-F 2 "" H 7450 1550 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x16_P2.54mm_Vertical" H 7450 1550 50  0001 C CNN
 F 3 "~" H 7450 1550 50  0001 C CNN
 	1    7450 1550
 	1    0    0    -1  
