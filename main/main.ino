@@ -95,8 +95,48 @@ enum state {
 };
 int curr_state;
 int inputTime;
+int attackTime = 500;
+int releaseTime = 500;
 
 //Private functions-----------------------------------------------------
+/*
+ * 
+ */
+void playNote(int note, int oscillator, int t)
+{
+  static int prevNote[] = [0, 0, 0, 0];
+  static int prevAmp[] = [0, 0, 0, 0];
+  //If note being played
+  if(note != 0)
+  {
+    if(note != prevNote[oscillator])
+    {
+      //SPI send out note
+      prevNote[oscillator] = note;
+    }
+    //Attack
+    if (prevAmp[oscillator] < 10)
+    {
+      prevAmp[oscillator] += 10/attackTime;
+      //send newAmp 
+    }
+  }
+  else    //if no note
+  {
+    //Release
+    if (prevAmp[oscillator] > 0)
+    {
+      prevAmp[oscillator] -= 10/releaseTime;
+      //send newAmp 
+    }
+    else
+    {
+      prevNote[oscillator] =0;
+      //sendOut note
+    }
+  }
+}
+
 /*
  * DAC SPI data transfer
  * @param address: address of data
@@ -136,7 +176,7 @@ void tuneOscillators()
 bool detectUserInput()
 {
   int inputThreshold = 0;
-  for(int i = 0, i < 16; i++)
+  for(int i = 0, i < 4; i++)
   {
     if(inputThreshold <= AnalogRead(AnalogInputs[i]))
       return true;
@@ -163,7 +203,10 @@ void idlePlay()
  */
 void userPlay()
 {
-  //GetInput()
+  int input0 = AnalogRead(AnalogInput0);
+  int input1 = AnalogRead(AnalogInput1);
+  int input2 = AnalogRead(AnalogInput2);
+  int input3 = AnalogRead(AnalogInput3);
   //ProcessInput()
   //Envelope()
   //SPI Output
@@ -198,7 +241,7 @@ void loop() {
       break;
       
     case tune:
-      //tuneOscillators()
+      tuneOscillators()
       delay(1000);
       curr_state = idle;
       break;
