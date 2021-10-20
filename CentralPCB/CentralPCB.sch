@@ -16,228 +16,132 @@ $EndDescr
 $Comp
 L Device:LED D1
 U 1 1 615FEF7B
-P 7150 3800
-F 0 "D1" H 7143 4017 50  0000 C CNN
-F 1 "POW" H 7143 3926 50  0000 C CNN
-F 2 "" H 7150 3800 50  0001 C CNN
-F 3 "~" H 7150 3800 50  0001 C CNN
-	1    7150 3800
+P 2900 3900
+F 0 "D1" H 2893 4117 50  0000 C CNN
+F 1 "POW" H 2893 4026 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 2900 3900 50  0001 C CNN
+F 3 "~" H 2900 3900 50  0001 C CNN
+	1    2900 3900
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_02x08_Odd_Even J1
 U 1 1 6160AD0C
-P 10050 3750
-F 0 "J1" H 10100 4267 50  0000 C CNN
-F 1 "POWER HEADER" H 10100 4176 50  0000 C CNN
-F 2 "" H 10050 3750 50  0001 C CNN
-F 3 "~" H 10050 3750 50  0001 C CNN
-	1    10050 3750
+P 10250 3900
+F 0 "J1" H 10300 4417 50  0000 C CNN
+F 1 "POWER HEADER" H 10300 4326 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x08_P2.54mm_Vertical" H 10250 3900 50  0001 C CNN
+F 3 "~" H 10250 3900 50  0001 C CNN
+	1    10250 3900
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0101
 U 1 1 6161C083
-P 8000 2650
-F 0 "#PWR?" H 8000 2400 50  0001 C CNN
-F 1 "GND" H 8005 2477 50  0000 C CNN
-F 2 "" H 8000 2650 50  0001 C CNN
-F 3 "" H 8000 2650 50  0001 C CNN
-	1    8000 2650
+P 7950 2800
+F 0 "#PWR0101" H 7950 2550 50  0001 C CNN
+F 1 "GND" H 7955 2627 50  0000 C CNN
+F 2 "" H 7950 2800 50  0001 C CNN
+F 3 "" H 7950 2800 50  0001 C CNN
+	1    7950 2800
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+10V #PWR?
-U 1 1 6161FDC8
-P 6800 850
-F 0 "#PWR?" H 6800 700 50  0001 C CNN
-F 1 "+10V" H 6815 1023 50  0000 C CNN
-F 2 "" H 6800 850 50  0001 C CNN
-F 3 "" H 6800 850 50  0001 C CNN
-	1    6800 850 
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+10V #PWR?
-U 1 1 61620A41
-P 8100 850
-F 0 "#PWR?" H 8100 700 50  0001 C CNN
-F 1 "+10V" H 8115 1023 50  0000 C CNN
-F 2 "" H 8100 850 50  0001 C CNN
-F 3 "" H 8100 850 50  0001 C CNN
-	1    8100 850 
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:-12V #PWR?
-U 1 1 616263AB
-P 10300 3250
-F 0 "#PWR?" H 10300 3350 50  0001 C CNN
-F 1 "-12V" H 10315 3423 50  0000 C CNN
-F 2 "" H 10300 3250 50  0001 C CNN
-F 3 "" H 10300 3250 50  0001 C CNN
-	1    10300 3250
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR?
-U 1 1 6162753D
-P 10500 3200
-F 0 "#PWR?" H 10500 3050 50  0001 C CNN
-F 1 "+5V" H 10515 3373 50  0000 C CNN
-F 2 "" H 10500 3200 50  0001 C CNN
-F 3 "" H 10500 3200 50  0001 C CNN
-	1    10500 3200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+12V #PWR?
-U 1 1 61627CF7
-P 10700 3150
-F 0 "#PWR?" H 10700 3000 50  0001 C CNN
-F 1 "+12V" H 10715 3323 50  0000 C CNN
-F 2 "" H 10700 3150 50  0001 C CNN
-F 3 "" H 10700 3150 50  0001 C CNN
-	1    10700 3150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:-12V #PWR?
+L power:-12V #PWR0104
 U 1 1 6162992E
-P 9300 3250
-F 0 "#PWR?" H 9300 3350 50  0001 C CNN
-F 1 "-12V" H 9315 3423 50  0000 C CNN
-F 2 "" H 9300 3250 50  0001 C CNN
-F 3 "" H 9300 3250 50  0001 C CNN
-	1    9300 3250
+P 7900 3400
+F 0 "#PWR0104" H 7900 3500 50  0001 C CNN
+F 1 "-12V" H 7915 3573 50  0000 C CNN
+F 2 "" H 7900 3400 50  0001 C CNN
+F 3 "" H 7900 3400 50  0001 C CNN
+	1    7900 3400
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR0105
 U 1 1 61629934
-P 9500 3200
-F 0 "#PWR?" H 9500 3050 50  0001 C CNN
-F 1 "+5V" H 9515 3373 50  0000 C CNN
-F 2 "" H 9500 3200 50  0001 C CNN
-F 3 "" H 9500 3200 50  0001 C CNN
-	1    9500 3200
+P 8500 3200
+F 0 "#PWR0105" H 8500 3050 50  0001 C CNN
+F 1 "+5V" H 8515 3373 50  0000 C CNN
+F 2 "" H 8500 3200 50  0001 C CNN
+F 3 "" H 8500 3200 50  0001 C CNN
+	1    8500 3200
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+12V #PWR?
+L power:+12V #PWR0106
 U 1 1 6162993A
-P 9700 3150
-F 0 "#PWR?" H 9700 3000 50  0001 C CNN
-F 1 "+12V" H 9715 3323 50  0000 C CNN
-F 2 "" H 9700 3150 50  0001 C CNN
-F 3 "" H 9700 3150 50  0001 C CNN
-	1    9700 3150
+P 9050 3000
+F 0 "#PWR0106" H 9050 2850 50  0001 C CNN
+F 1 "+12V" H 9065 3173 50  0000 C CNN
+F 2 "" H 9050 3000 50  0001 C CNN
+F 3 "" H 9050 3000 50  0001 C CNN
+	1    9050 3000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10250 4050 10300 4050
+	10450 4200 10500 4200
 Wire Wire Line
-	10300 4050 10300 3250
+	10500 4200 10500 3400
 Wire Wire Line
-	9750 4050 9300 4050
+	9950 4200 9500 4200
 Wire Wire Line
-	9300 4050 9300 3250
+	9500 4200 9500 3400
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0107
 U 1 1 6162C97B
-P 10600 4100
-F 0 "#PWR?" H 10600 3850 50  0001 C CNN
-F 1 "GND" H 10605 3927 50  0000 C CNN
-F 2 "" H 10600 4100 50  0001 C CNN
-F 3 "" H 10600 4100 50  0001 C CNN
-	1    10600 4100
+P 10800 4250
+F 0 "#PWR0107" H 10800 4000 50  0001 C CNN
+F 1 "GND" H 10805 4077 50  0000 C CNN
+F 2 "" H 10800 4250 50  0001 C CNN
+F 3 "" H 10800 4250 50  0001 C CNN
+	1    10800 4250
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0108
 U 1 1 6162CF33
-P 9400 4100
-F 0 "#PWR?" H 9400 3850 50  0001 C CNN
-F 1 "GND" H 9405 3927 50  0000 C CNN
-F 2 "" H 9400 4100 50  0001 C CNN
-F 3 "" H 9400 4100 50  0001 C CNN
-	1    9400 4100
+P 9600 4350
+F 0 "#PWR0108" H 9600 4100 50  0001 C CNN
+F 1 "GND" H 9605 4177 50  0000 C CNN
+F 2 "" H 9600 4350 50  0001 C CNN
+F 3 "" H 9600 4350 50  0001 C CNN
+	1    9600 4350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10250 3950 10600 3950
+	10450 4100 10800 4100
 Wire Wire Line
-	10600 3950 10600 4100
+	10800 4100 10800 4250
 Wire Wire Line
-	10250 3850 10600 3850
+	10450 4000 10800 4000
 Wire Wire Line
-	10600 3850 10600 3950
-Connection ~ 10600 3950
+	10800 4000 10800 4100
+Connection ~ 10800 4100
 Wire Wire Line
-	10250 3750 10600 3750
+	10450 3900 10800 3900
 Wire Wire Line
-	10600 3750 10600 3850
-Connection ~ 10600 3850
+	10800 3900 10800 4000
+Connection ~ 10800 4000
 Wire Wire Line
-	9750 3950 9400 3950
+	9950 4100 9600 4100
 Wire Wire Line
-	9400 3950 9400 4100
+	9950 4000 9600 4000
 Wire Wire Line
-	9750 3850 9400 3850
+	9600 4000 9600 4100
 Wire Wire Line
-	9400 3850 9400 3950
-Connection ~ 9400 3950
+	9950 3900 9600 3900
 Wire Wire Line
-	9750 3750 9400 3750
+	9600 3900 9600 4000
+Connection ~ 9600 4000
 Wire Wire Line
-	9400 3750 9400 3850
-Connection ~ 9400 3850
+	10450 3800 10900 3800
 Wire Wire Line
-	10250 3650 10700 3650
+	9950 3800 9900 3800
 Wire Wire Line
-	10700 3650 10700 3150
+	10450 3700 10700 3700
 Wire Wire Line
-	9750 3650 9700 3650
-Wire Wire Line
-	9700 3650 9700 3150
-Wire Wire Line
-	10250 3550 10500 3550
-Wire Wire Line
-	10500 3550 10500 3200
-Wire Wire Line
-	9750 3550 9500 3550
-Wire Wire Line
-	9500 3550 9500 3200
-Text GLabel 4100 2250 0    50   Input ~ 0
-DA1
-Text GLabel 4100 2150 0    50   Input ~ 0
-DA3
-Text GLabel 4100 1850 0    50   Input ~ 0
-DB1
-Text GLabel 4100 1750 0    50   Input ~ 0
-DB3
-Text GLabel 4100 1450 0    50   Input ~ 0
-DC1
-Text GLabel 4100 1350 0    50   Input ~ 0
-DC3
-Text GLabel 4100 1050 0    50   Input ~ 0
-DD1
-Text GLabel 4100 950  0    50   Input ~ 0
-DD3
-Text GLabel 10850 2250 2    50   Input ~ 0
-DA2
-Text GLabel 10850 2150 2    50   Input ~ 0
-DA4
-Text GLabel 10850 1850 2    50   Input ~ 0
-DB2
-Text GLabel 10850 1750 2    50   Input ~ 0
-DB4
-Text GLabel 10850 1350 2    50   Input ~ 0
-DC4
-Text GLabel 10850 1050 2    50   Input ~ 0
-DD2
-Text GLabel 10850 950  2    50   Input ~ 0
-DD4
+	9950 3700 9700 3700
 $Comp
 L teensy:Teensy4.1 U1
 U 1 1 615DD624
@@ -250,10 +154,10 @@ F 3 "" H 4652 6148 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0109
 U 1 1 616B52F2
 P 6350 7050
-F 0 "#PWR?" H 6350 6800 50  0001 C CNN
+F 0 "#PWR0109" H 6350 6800 50  0001 C CNN
 F 1 "GND" H 6355 6877 50  0000 C CNN
 F 2 "" H 6350 7050 50  0001 C CNN
 F 3 "" H 6350 7050 50  0001 C CNN
@@ -261,10 +165,10 @@ F 3 "" H 6350 7050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0110
 U 1 1 616B5948
 P 3750 7300
-F 0 "#PWR?" H 3750 7050 50  0001 C CNN
+F 0 "#PWR0110" H 3750 7050 50  0001 C CNN
 F 1 "GND" H 3755 7127 50  0000 C CNN
 F 2 "" H 3750 7300 50  0001 C CNN
 F 3 "" H 3750 7300 50  0001 C CNN
@@ -297,63 +201,63 @@ Connection ~ 6350 5000
 Wire Wire Line
 	3950 3600 3750 3600
 Wire Wire Line
-	3750 3600 3750 6750
+	3750 3600 3750 5500
 Connection ~ 3750 6750
 $Comp
-L test-lib:BA7810CP-E2 U?
+L test-lib:BA7810CP-E2 U2
 U 1 1 61610C90
-P 10000 5550
-F 0 "U?" H 10000 5905 50  0000 C CNN
-F 1 "BA7810CP-E2" H 10000 5814 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 10000 5723 50  0000 C CNN
-F 3 "https://fscdn.rohm.com/en/products/databook/datasheet/ic/power/linear_regulator/ba78_series-e.pdf" H 10000 5550 50  0001 C CNN
-	1    10000 5550
+P 9900 5800
+F 0 "U2" H 9900 6155 50  0000 C CNN
+F 1 "BA7810CP-E2" H 9900 6064 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 9900 5973 50  0000 C CNN
+F 3 "https://fscdn.rohm.com/en/products/databook/datasheet/ic/power/linear_regulator/ba78_series-e.pdf" H 9900 5800 50  0001 C CNN
+	1    9900 5800
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+12V #PWR?
+L power:+12V #PWR0111
 U 1 1 61611891
-P 9050 5550
-F 0 "#PWR?" H 9050 5400 50  0001 C CNN
-F 1 "+12V" H 9065 5723 50  0000 C CNN
-F 2 "" H 9050 5550 50  0001 C CNN
-F 3 "" H 9050 5550 50  0001 C CNN
-	1    9050 5550
+P 8950 5800
+F 0 "#PWR0111" H 8950 5650 50  0001 C CNN
+F 1 "+12V" H 8965 5973 50  0000 C CNN
+F 2 "" H 8950 5800 50  0001 C CNN
+F 3 "" H 8950 5800 50  0001 C CNN
+	1    8950 5800
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0112
 U 1 1 616148AD
-P 10000 6000
-F 0 "#PWR?" H 10000 5750 50  0001 C CNN
-F 1 "GND" H 10005 5827 50  0000 C CNN
-F 2 "" H 10000 6000 50  0001 C CNN
-F 3 "" H 10000 6000 50  0001 C CNN
-	1    10000 6000
+P 9900 6250
+F 0 "#PWR0112" H 9900 6000 50  0001 C CNN
+F 1 "GND" H 9905 6077 50  0000 C CNN
+F 2 "" H 9900 6250 50  0001 C CNN
+F 3 "" H 9900 6250 50  0001 C CNN
+	1    9900 6250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10000 5900 10000 6000
+	9900 6150 9900 6250
 $Comp
-L power:+10V #PWR?
+L power:+10V #PWR0113
 U 1 1 61617614
-P 10900 5550
-F 0 "#PWR?" H 10900 5400 50  0001 C CNN
-F 1 "+10V" H 10915 5723 50  0000 C CNN
-F 2 "" H 10900 5550 50  0001 C CNN
-F 3 "" H 10900 5550 50  0001 C CNN
-	1    10900 5550
+P 10800 5800
+F 0 "#PWR0113" H 10800 5650 50  0001 C CNN
+F 1 "+10V" H 10815 5973 50  0000 C CNN
+F 2 "" H 10800 5800 50  0001 C CNN
+F 3 "" H 10800 5800 50  0001 C CNN
+	1    10800 5800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10550 5550 10900 5550
+	10450 5800 10800 5800
 Wire Wire Line
-	9050 5550 9450 5550
+	8950 5800 9350 5800
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR0114
 U 1 1 61627E4C
 P 6250 3600
-F 0 "#PWR?" H 6250 3450 50  0001 C CNN
+F 0 "#PWR0114" H 6250 3450 50  0001 C CNN
 F 1 "+5V" H 6265 3773 50  0000 C CNN
 F 2 "" H 6250 3600 50  0001 C CNN
 F 3 "" H 6250 3600 50  0001 C CNN
@@ -368,1041 +272,26 @@ Text GLabel 3650 4900 0    50   Input ~ 0
 MISO0
 Text GLabel 6450 4900 2    50   Input ~ 0
 SCK0
-Text GLabel 8500 4700 0    50   Input ~ 0
+Text GLabel 7950 4850 0    50   Input ~ 0
 MOSI0
-Text GLabel 8500 4800 0    50   Input ~ 0
+Text GLabel 7950 4950 0    50   Input ~ 0
 MISO0
-Text GLabel 8500 4900 0    50   Input ~ 0
+Text GLabel 7950 5050 0    50   Input ~ 0
 SCK0
-$Comp
-L SparkFun-KiCad-Libraries-master_Libraries_SparkFun-Connectors:DIN5 J5
-U 1 1 6164DB03
-P 1450 6650
-F 0 "J5" H 1450 6280 45  0000 C CNN
-F 1 "MIDI-IN" H 1450 6196 45  0000 C CNN
-F 2 "DIN5-RA-PTH" H 1450 7150 20  0001 C CNN
-F 3 "" H 1450 6650 50  0001 C CNN
-F 4 "CONN-09481" H 1450 6101 60  0000 C CNN "Field4"
-	1    1450 6650
-	1    0    0    -1  
-$EndComp
-$Comp
-L SparkFun-KiCad-Libraries-master_Libraries_SparkFun-Connectors:DIN5 J6
-U 1 1 6164E87F
-P 2550 6650
-F 0 "J6" H 2550 6280 45  0000 C CNN
-F 1 "MIDI-OUT" H 2550 6196 45  0000 C CNN
-F 2 "DIN5-RA-PTH" H 2550 7150 20  0001 C CNN
-F 3 "" H 2550 6650 50  0001 C CNN
-F 4 "CONN-09481" H 2550 6101 60  0000 C CNN "Field4"
-	1    2550 6650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_US R?
-U 1 1 61652C2C
-P 9850 2450
-F 0 "R?" H 9918 2496 50  0000 L CNN
-F 1 "3.3kOhm" H 9918 2405 50  0000 L CNN
-F 2 "" V 9890 2440 50  0001 C CNN
-F 3 "~" H 9850 2450 50  0001 C CNN
-	1    9850 2450
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R_US R?
-U 1 1 61653FC0
-P 9500 2250
-F 0 "R?" V 9295 2250 50  0000 C CNN
-F 1 "6.65kOhm" V 9386 2250 50  0000 C CNN
-F 2 "" V 9540 2240 50  0001 C CNN
-F 3 "~" H 9500 2250 50  0001 C CNN
-	1    9500 2250
-	0    1    1    0   
-$EndComp
-$Comp
-L RJHSE-5080-04:RJHSE-5080-04 J2
-U 1 1 616132FA
-P 7000 850
-F 0 "J2" H 7450 1115 50  0000 C CNN
-F 1 "INPUT HEADER" H 7450 1024 50  0000 C CNN
-F 2 "RJHSE508004" H 7750 950 50  0001 L CNN
-F 3 "https://cdn.amphenol-icc.com/media/wysiwyg/files/drawing/rjhse508x.pdf" H 7750 850 50  0001 L CNN
-F 4 "Modular Connectors / Ethernet Connectors CAT 5 MODULAR JACK HIGH TEMP" H 7750 750 50  0001 L CNN "Description"
-F 5 "13.718" H 7750 650 50  0001 L CNN "Height"
-F 6 "Amphenol" H 7750 550 50  0001 L CNN "Manufacturer_Name"
-F 7 "RJHSE-5080-04" H 7750 450 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "523-RJHSE-5080-04" H 7750 350 50  0001 L CNN "Mouser Part Number"
-F 9 "https://www.mouser.co.uk/ProductDetail/Amphenol-Commercial-Products/RJHSE-5080-04?qs=St27ATL478sMZ9Grr%2FzN1w%3D%3D" H 7750 250 50  0001 L CNN "Mouser Price/Stock"
-F 10 "" H 7750 150 50  0001 L CNN "Arrow Part Number"
-F 11 "" H 7750 50  50  0001 L CNN "Arrow Price/Stock"
-	1    7000 850 
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	8000 850  8000 1250
-Wire Wire Line
-	6900 850  6900 1250
-Wire Wire Line
-	7000 2350 6800 2350
-Wire Wire Line
-	7000 1950 6800 1950
-Connection ~ 6800 1950
-Wire Wire Line
-	6800 1950 6800 2350
-Wire Wire Line
-	7000 1550 6800 1550
-Connection ~ 6800 1550
-Wire Wire Line
-	6800 1550 6800 1950
-Wire Wire Line
-	7000 1150 6800 1150
-Wire Wire Line
-	6800 1150 6800 1550
-Wire Wire Line
-	7900 2350 8100 2350
-Wire Wire Line
-	7900 1950 8100 1950
-Connection ~ 8100 1950
-Wire Wire Line
-	8100 1950 8100 2350
-Wire Wire Line
-	7900 1550 8100 1550
-Connection ~ 8100 1550
-Wire Wire Line
-	8100 1550 8100 1950
-Wire Wire Line
-	7900 1150 8100 1150
-Wire Wire Line
-	8100 1150 8100 1550
-Wire Wire Line
-	7000 2050 6900 2050
-Connection ~ 6900 2050
-Wire Wire Line
-	7000 1650 6900 1650
-Connection ~ 6900 1650
-Wire Wire Line
-	6900 1650 6900 2050
-Wire Wire Line
-	7000 1250 6900 1250
-Connection ~ 6900 1250
-Wire Wire Line
-	6900 1250 6900 1650
-Wire Wire Line
-	7000 850  6900 850 
-Wire Wire Line
-	7900 850  8000 850 
-Wire Wire Line
-	7900 1250 8000 1250
-Connection ~ 8000 1250
-Wire Wire Line
-	7900 1650 8000 1650
-Wire Wire Line
-	8000 1250 8000 1650
-Connection ~ 8000 1650
-Wire Wire Line
-	8000 1650 8000 2050
-Wire Wire Line
-	7900 2050 8000 2050
-Connection ~ 8000 2050
-$Comp
-L Diode:BZT52Bxx D?
-U 1 1 616CCB5B
-P 8700 2450
-F 0 "D?" H 8700 2667 50  0000 C CNN
-F 1 "12v Zener" H 8700 2576 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-123" H 8700 2275 50  0001 C CNN
-F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bzt52b2v4.pdf" H 8700 2450 50  0001 C CNN
-	1    8700 2450
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R_US R?
-U 1 1 616EC12C
-P 9700 2450
-F 0 "R?" H 9768 2496 50  0000 L CNN
-F 1 "3.3kOhm" H 9768 2405 50  0000 L CNN
-F 2 "" V 9740 2440 50  0001 C CNN
-F 3 "~" H 9700 2450 50  0001 C CNN
-	1    9700 2450
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R_US R?
-U 1 1 616EC132
-P 9500 2150
-F 0 "R?" V 9295 2150 50  0000 C CNN
-F 1 "6.65kOhm" V 9386 2150 50  0000 C CNN
-F 2 "" V 9540 2140 50  0001 C CNN
-F 3 "~" H 9500 2150 50  0001 C CNN
-	1    9500 2150
-	0    1    1    0   
-$EndComp
-$Comp
-L Diode:BZT52Bxx D?
-U 1 1 616EC138
-P 8550 2450
-F 0 "D?" H 8550 2667 50  0000 C CNN
-F 1 "12v Zener" H 8550 2576 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-123" H 8550 2275 50  0001 C CNN
-F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bzt52b2v4.pdf" H 8550 2450 50  0001 C CNN
-	1    8550 2450
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:LED D4
-U 1 1 61602502
-P 7150 4850
-F 0 "D4" H 7143 5067 50  0000 C CNN
-F 1 "COM" H 7143 4976 50  0000 C CNN
-F 2 "" H 7150 4850 50  0001 C CNN
-F 3 "~" H 7150 4850 50  0001 C CNN
-	1    7150 4850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:LED D3
-U 1 1 615FE5B0
-P 7150 4500
-F 0 "D3" H 7143 4717 50  0000 C CNN
-F 1 "ERR" H 7143 4626 50  0000 C CNN
-F 2 "" H 7150 4500 50  0001 C CNN
-F 3 "~" H 7150 4500 50  0001 C CNN
-	1    7150 4500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:LED D2
-U 1 1 615FD3EA
-P 7150 4150
-F 0 "D2" H 7143 4367 50  0000 C CNN
-F 1 "WRN" H 7143 4276 50  0000 C CNN
-F 2 "" H 7150 4150 50  0001 C CNN
-F 3 "~" H 7150 4150 50  0001 C CNN
-	1    7150 4150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_US R?
-U 1 1 6174073E
-P 10000 2450
-F 0 "R?" H 10068 2496 50  0000 L CNN
-F 1 "3.3kOhm" H 10068 2405 50  0000 L CNN
-F 2 "" V 10040 2440 50  0001 C CNN
-F 3 "~" H 10000 2450 50  0001 C CNN
-	1    10000 2450
-	-1   0    0    1   
-$EndComp
-$Comp
-L Diode:BZT52Bxx D?
-U 1 1 6174074A
-P 8250 2450
-F 0 "D?" H 8250 2667 50  0000 C CNN
-F 1 "12v Zener" H 8250 2576 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-123" H 8250 2275 50  0001 C CNN
-F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bzt52b2v4.pdf" H 8250 2450 50  0001 C CNN
-	1    8250 2450
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R_US R?
-U 1 1 61740750
-P 10300 2450
-F 0 "R?" H 10368 2496 50  0000 L CNN
-F 1 "3.3kOhm" H 10368 2405 50  0000 L CNN
-F 2 "" V 10340 2440 50  0001 C CNN
-F 3 "~" H 10300 2450 50  0001 C CNN
-	1    10300 2450
-	-1   0    0    1   
-$EndComp
-$Comp
-L Diode:BZT52Bxx D?
-U 1 1 6174075C
-P 8400 2450
-F 0 "D?" H 8400 2667 50  0000 C CNN
-F 1 "12v Zener" H 8400 2576 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-123" H 8400 2275 50  0001 C CNN
-F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bzt52b2v4.pdf" H 8400 2450 50  0001 C CNN
-	1    8400 2450
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R_US R?
-U 1 1 61749A97
-P 9500 1850
-F 0 "R?" V 9295 1850 50  0000 C CNN
-F 1 "6.65kOhm" V 9386 1850 50  0000 C CNN
-F 2 "" V 9540 1840 50  0001 C CNN
-F 3 "~" H 9500 1850 50  0001 C CNN
-	1    9500 1850
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_US R?
-U 1 1 61749A9D
-P 9500 1750
-F 0 "R?" V 9295 1750 50  0000 C CNN
-F 1 "6.65kOhm" V 9386 1750 50  0000 C CNN
-F 2 "" V 9540 1740 50  0001 C CNN
-F 3 "~" H 9500 1750 50  0001 C CNN
-	1    9500 1750
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_US R?
-U 1 1 6174C106
-P 9500 1450
-F 0 "R?" V 9295 1450 50  0000 C CNN
-F 1 "6.65kOhm" V 9386 1450 50  0000 C CNN
-F 2 "" V 9540 1440 50  0001 C CNN
-F 3 "~" H 9500 1450 50  0001 C CNN
-	1    9500 1450
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_US R?
-U 1 1 6174C10C
-P 9500 1350
-F 0 "R?" V 9295 1350 50  0000 C CNN
-F 1 "6.65kOhm" V 9386 1350 50  0000 C CNN
-F 2 "" V 9540 1340 50  0001 C CNN
-F 3 "~" H 9500 1350 50  0001 C CNN
-	1    9500 1350
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_US R?
-U 1 1 6174E6E7
-P 9500 1050
-F 0 "R?" V 9295 1050 50  0000 C CNN
-F 1 "6.65kOhm" V 9386 1050 50  0000 C CNN
-F 2 "" V 9540 1040 50  0001 C CNN
-F 3 "~" H 9500 1050 50  0001 C CNN
-	1    9500 1050
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_US R?
-U 1 1 6174E6ED
-P 9500 950
-F 0 "R?" V 9295 950 50  0000 C CNN
-F 1 "6.65kOhm" V 9386 950 50  0000 C CNN
-F 2 "" V 9540 940 50  0001 C CNN
-F 3 "~" H 9500 950 50  0001 C CNN
-	1    9500 950 
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_US R?
-U 1 1 61767819
-P 10600 2450
-F 0 "R?" H 10668 2496 50  0000 L CNN
-F 1 "3.3kOhm" H 10668 2405 50  0000 L CNN
-F 2 "" V 10640 2440 50  0001 C CNN
-F 3 "~" H 10600 2450 50  0001 C CNN
-	1    10600 2450
-	-1   0    0    1   
-$EndComp
-$Comp
-L Diode:BZT52Bxx D?
-U 1 1 6176781F
-P 8850 2450
-F 0 "D?" H 8850 2667 50  0000 C CNN
-F 1 "12v Zener" H 8850 2576 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-123" H 8850 2275 50  0001 C CNN
-F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bzt52b2v4.pdf" H 8850 2450 50  0001 C CNN
-	1    8850 2450
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R_US R?
-U 1 1 61767825
-P 10750 2450
-F 0 "R?" H 10818 2496 50  0000 L CNN
-F 1 "3.3kOhm" H 10818 2405 50  0000 L CNN
-F 2 "" V 10790 2440 50  0001 C CNN
-F 3 "~" H 10750 2450 50  0001 C CNN
-	1    10750 2450
-	-1   0    0    1   
-$EndComp
-$Comp
-L Diode:BZT52Bxx D?
-U 1 1 6176782B
-P 9000 2450
-F 0 "D?" H 9000 2667 50  0000 C CNN
-F 1 "12v Zener" H 9000 2576 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-123" H 9000 2275 50  0001 C CNN
-F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bzt52b2v4.pdf" H 9000 2450 50  0001 C CNN
-	1    9000 2450
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R_US R?
-U 1 1 61767831
-P 10450 2450
-F 0 "R?" H 10518 2496 50  0000 L CNN
-F 1 "3.3kOhm" H 10518 2405 50  0000 L CNN
-F 2 "" V 10490 2440 50  0001 C CNN
-F 3 "~" H 10450 2450 50  0001 C CNN
-	1    10450 2450
-	-1   0    0    1   
-$EndComp
-$Comp
-L Diode:BZT52Bxx D?
-U 1 1 61767837
-P 9150 2450
-F 0 "D?" H 9150 2667 50  0000 C CNN
-F 1 "12v Zener" H 9150 2576 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-123" H 9150 2275 50  0001 C CNN
-F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bzt52b2v4.pdf" H 9150 2450 50  0001 C CNN
-	1    9150 2450
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R_US R?
-U 1 1 6176783D
-P 10150 2450
-F 0 "R?" H 10218 2496 50  0000 L CNN
-F 1 "3.3kOhm" H 10218 2405 50  0000 L CNN
-F 2 "" V 10190 2440 50  0001 C CNN
-F 3 "~" H 10150 2450 50  0001 C CNN
-	1    10150 2450
-	-1   0    0    1   
-$EndComp
-$Comp
-L Diode:BZT52Bxx D?
-U 1 1 61767843
-P 9300 2450
-F 0 "D?" H 9300 2667 50  0000 C CNN
-F 1 "12v Zener" H 9300 2576 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-123" H 9300 2275 50  0001 C CNN
-F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bzt52b2v4.pdf" H 9300 2450 50  0001 C CNN
-	1    9300 2450
-	0    -1   -1   0   
-$EndComp
-Text GLabel 10850 1450 2    50   Input ~ 0
-DC2
-$Comp
-L Diode:BZT52Bxx D?
-U 1 1 61891868
-P 6050 2450
-F 0 "D?" H 6050 2667 50  0000 C CNN
-F 1 "12v Zener" H 6050 2576 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-123" H 6050 2275 50  0001 C CNN
-F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bzt52b2v4.pdf" H 6050 2450 50  0001 C CNN
-	1    6050 2450
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Diode:BZT52Bxx D?
-U 1 1 6189186E
-P 5900 2450
-F 0 "D?" H 5900 2667 50  0000 C CNN
-F 1 "12v Zener" H 5900 2576 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-123" H 5900 2275 50  0001 C CNN
-F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bzt52b2v4.pdf" H 5900 2450 50  0001 C CNN
-	1    5900 2450
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Diode:BZT52Bxx D?
-U 1 1 61891874
-P 5600 2450
-F 0 "D?" H 5600 2667 50  0000 C CNN
-F 1 "12v Zener" H 5600 2576 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-123" H 5600 2275 50  0001 C CNN
-F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bzt52b2v4.pdf" H 5600 2450 50  0001 C CNN
-	1    5600 2450
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Diode:BZT52Bxx D?
-U 1 1 6189187A
-P 5750 2450
-F 0 "D?" H 5750 2667 50  0000 C CNN
-F 1 "12v Zener" H 5750 2576 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-123" H 5750 2275 50  0001 C CNN
-F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bzt52b2v4.pdf" H 5750 2450 50  0001 C CNN
-	1    5750 2450
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Diode:BZT52Bxx D?
-U 1 1 61891880
-P 6200 2450
-F 0 "D?" H 6200 2667 50  0000 C CNN
-F 1 "12v Zener" H 6200 2576 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-123" H 6200 2275 50  0001 C CNN
-F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bzt52b2v4.pdf" H 6200 2450 50  0001 C CNN
-	1    6200 2450
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Diode:BZT52Bxx D?
-U 1 1 61891886
-P 6350 2450
-F 0 "D?" H 6350 2667 50  0000 C CNN
-F 1 "12v Zener" H 6350 2576 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-123" H 6350 2275 50  0001 C CNN
-F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bzt52b2v4.pdf" H 6350 2450 50  0001 C CNN
-	1    6350 2450
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Diode:BZT52Bxx D?
-U 1 1 6189188C
-P 6500 2450
-F 0 "D?" H 6500 2667 50  0000 C CNN
-F 1 "12v Zener" H 6500 2576 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-123" H 6500 2275 50  0001 C CNN
-F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bzt52b2v4.pdf" H 6500 2450 50  0001 C CNN
-	1    6500 2450
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Diode:BZT52Bxx D?
-U 1 1 61891892
-P 6650 2450
-F 0 "D?" H 6650 2667 50  0000 C CNN
-F 1 "12v Zener" H 6650 2576 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-123" H 6650 2275 50  0001 C CNN
-F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bzt52b2v4.pdf" H 6650 2450 50  0001 C CNN
-	1    6650 2450
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R_US R?
-U 1 1 6189701C
-P 5400 2250
-F 0 "R?" V 5195 2250 50  0000 C CNN
-F 1 "6.65kOhm" V 5286 2250 50  0000 C CNN
-F 2 "" V 5440 2240 50  0001 C CNN
-F 3 "~" H 5400 2250 50  0001 C CNN
-	1    5400 2250
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_US R?
-U 1 1 61897022
-P 5400 2150
-F 0 "R?" V 5195 2150 50  0000 C CNN
-F 1 "6.65kOhm" V 5286 2150 50  0000 C CNN
-F 2 "" V 5440 2140 50  0001 C CNN
-F 3 "~" H 5400 2150 50  0001 C CNN
-	1    5400 2150
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_US R?
-U 1 1 61897028
-P 5400 1850
-F 0 "R?" V 5195 1850 50  0000 C CNN
-F 1 "6.65kOhm" V 5286 1850 50  0000 C CNN
-F 2 "" V 5440 1840 50  0001 C CNN
-F 3 "~" H 5400 1850 50  0001 C CNN
-	1    5400 1850
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_US R?
-U 1 1 6189702E
-P 5400 1750
-F 0 "R?" V 5195 1750 50  0000 C CNN
-F 1 "6.65kOhm" V 5286 1750 50  0000 C CNN
-F 2 "" V 5440 1740 50  0001 C CNN
-F 3 "~" H 5400 1750 50  0001 C CNN
-	1    5400 1750
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_US R?
-U 1 1 61897034
-P 5400 1450
-F 0 "R?" V 5195 1450 50  0000 C CNN
-F 1 "6.65kOhm" V 5286 1450 50  0000 C CNN
-F 2 "" V 5440 1440 50  0001 C CNN
-F 3 "~" H 5400 1450 50  0001 C CNN
-	1    5400 1450
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_US R?
-U 1 1 6189703A
-P 5400 1350
-F 0 "R?" V 5195 1350 50  0000 C CNN
-F 1 "6.65kOhm" V 5286 1350 50  0000 C CNN
-F 2 "" V 5440 1340 50  0001 C CNN
-F 3 "~" H 5400 1350 50  0001 C CNN
-	1    5400 1350
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_US R?
-U 1 1 61897040
-P 5400 1050
-F 0 "R?" V 5195 1050 50  0000 C CNN
-F 1 "6.65kOhm" V 5286 1050 50  0000 C CNN
-F 2 "" V 5440 1040 50  0001 C CNN
-F 3 "~" H 5400 1050 50  0001 C CNN
-	1    5400 1050
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_US R?
-U 1 1 61897046
-P 5400 950
-F 0 "R?" V 5195 950 50  0000 C CNN
-F 1 "6.65kOhm" V 5286 950 50  0000 C CNN
-F 2 "" V 5440 940 50  0001 C CNN
-F 3 "~" H 5400 950 50  0001 C CNN
-	1    5400 950 
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_US R?
-U 1 1 6189BE82
-P 4300 2450
-F 0 "R?" H 4368 2496 50  0000 L CNN
-F 1 "3.3kOhm" H 4368 2405 50  0000 L CNN
-F 2 "" V 4340 2440 50  0001 C CNN
-F 3 "~" H 4300 2450 50  0001 C CNN
-	1    4300 2450
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R_US R?
-U 1 1 6189BE88
-P 4150 2450
-F 0 "R?" H 4218 2496 50  0000 L CNN
-F 1 "3.3kOhm" H 4218 2405 50  0000 L CNN
-F 2 "" V 4190 2440 50  0001 C CNN
-F 3 "~" H 4150 2450 50  0001 C CNN
-	1    4150 2450
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R_US R?
-U 1 1 6189BE8E
-P 4450 2450
-F 0 "R?" H 4518 2496 50  0000 L CNN
-F 1 "3.3kOhm" H 4518 2405 50  0000 L CNN
-F 2 "" V 4490 2440 50  0001 C CNN
-F 3 "~" H 4450 2450 50  0001 C CNN
-	1    4450 2450
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R_US R?
-U 1 1 6189BE94
-P 4750 2450
-F 0 "R?" H 4818 2496 50  0000 L CNN
-F 1 "3.3kOhm" H 4818 2405 50  0000 L CNN
-F 2 "" V 4790 2440 50  0001 C CNN
-F 3 "~" H 4750 2450 50  0001 C CNN
-	1    4750 2450
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R_US R?
-U 1 1 6189BE9A
-P 5050 2450
-F 0 "R?" H 5118 2496 50  0000 L CNN
-F 1 "3.3kOhm" H 5118 2405 50  0000 L CNN
-F 2 "" V 5090 2440 50  0001 C CNN
-F 3 "~" H 5050 2450 50  0001 C CNN
-	1    5050 2450
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R_US R?
-U 1 1 6189BEA0
-P 5200 2450
-F 0 "R?" H 5268 2496 50  0000 L CNN
-F 1 "3.3kOhm" H 5268 2405 50  0000 L CNN
-F 2 "" V 5240 2440 50  0001 C CNN
-F 3 "~" H 5200 2450 50  0001 C CNN
-	1    5200 2450
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R_US R?
-U 1 1 6189BEA6
-P 4900 2450
-F 0 "R?" H 4968 2496 50  0000 L CNN
-F 1 "3.3kOhm" H 4968 2405 50  0000 L CNN
-F 2 "" V 4940 2440 50  0001 C CNN
-F 3 "~" H 4900 2450 50  0001 C CNN
-	1    4900 2450
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R_US R?
-U 1 1 6189BEAC
-P 4600 2450
-F 0 "R?" H 4668 2496 50  0000 L CNN
-F 1 "3.3kOhm" H 4668 2405 50  0000 L CNN
-F 2 "" V 4640 2440 50  0001 C CNN
-F 3 "~" H 4600 2450 50  0001 C CNN
-	1    4600 2450
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	7900 950  9300 950 
-Wire Wire Line
-	9350 1050 9150 1050
-Wire Wire Line
-	7900 1350 9000 1350
-Wire Wire Line
-	9350 1450 8850 1450
-Wire Wire Line
-	7900 1750 8700 1750
-Wire Wire Line
-	9350 2150 8400 2150
-Wire Wire Line
-	7900 2250 8250 2250
-Wire Wire Line
-	9650 2250 9700 2250
-Wire Wire Line
-	10850 2150 9850 2150
-Wire Wire Line
-	9650 1850 10000 1850
-Wire Wire Line
-	10850 1350 10450 1350
-Wire Wire Line
-	9650 1050 10600 1050
-Wire Wire Line
-	10850 950  10750 950 
-Wire Wire Line
-	8250 2300 8250 2250
-Connection ~ 8250 2250
-Wire Wire Line
-	8250 2250 9350 2250
-Wire Wire Line
-	8400 2300 8400 2150
-Connection ~ 8400 2150
-Wire Wire Line
-	8400 2150 7900 2150
-Wire Wire Line
-	8550 2300 8550 1850
-Wire Wire Line
-	7900 1850 8550 1850
-Connection ~ 8550 1850
-Wire Wire Line
-	8550 1850 9350 1850
-Wire Wire Line
-	8700 2300 8700 1750
-Connection ~ 8700 1750
-Wire Wire Line
-	8700 1750 9350 1750
-Wire Wire Line
-	8850 2300 8850 1450
-Connection ~ 8850 1450
-Wire Wire Line
-	8850 1450 7900 1450
-Wire Wire Line
-	9000 2300 9000 1350
-Connection ~ 9000 1350
-Wire Wire Line
-	9000 1350 9350 1350
-Wire Wire Line
-	9150 2300 9150 1050
-Connection ~ 9150 1050
-Wire Wire Line
-	9150 1050 7900 1050
-Wire Wire Line
-	9300 2300 9300 950 
-Connection ~ 9300 950 
-Wire Wire Line
-	9300 950  9350 950 
-Wire Wire Line
-	9700 2300 9700 2250
-Connection ~ 9700 2250
-Wire Wire Line
-	9700 2250 10850 2250
-Wire Wire Line
-	9850 2300 9850 2150
-Connection ~ 9850 2150
-Wire Wire Line
-	9850 2150 9650 2150
-Wire Wire Line
-	10000 2300 10000 1850
-Connection ~ 10000 1850
-Wire Wire Line
-	10000 1850 10850 1850
-Wire Wire Line
-	10150 2300 10150 1750
-Wire Wire Line
-	9650 1750 10150 1750
-Connection ~ 10150 1750
-Wire Wire Line
-	10150 1750 10850 1750
-Wire Wire Line
-	10300 2300 10300 1450
-Wire Wire Line
-	9650 1450 10300 1450
-Connection ~ 10300 1450
-Wire Wire Line
-	10300 1450 10850 1450
-Wire Wire Line
-	10450 2300 10450 1350
-Connection ~ 10450 1350
-Wire Wire Line
-	10450 1350 9650 1350
-Wire Wire Line
-	10600 2300 10600 1050
-Connection ~ 10600 1050
-Wire Wire Line
-	10600 1050 10850 1050
-Wire Wire Line
-	10750 2300 10750 950 
-Connection ~ 10750 950 
-Wire Wire Line
-	10750 950  9650 950 
-Wire Wire Line
-	8000 2050 8000 2600
-Wire Wire Line
-	8250 2600 8000 2600
-Connection ~ 8000 2600
-Wire Wire Line
-	8000 2600 8000 2650
-Wire Wire Line
-	8400 2600 8250 2600
-Connection ~ 8250 2600
-Wire Wire Line
-	8550 2600 8400 2600
-Connection ~ 8400 2600
-Wire Wire Line
-	8700 2600 8550 2600
-Connection ~ 8550 2600
-Wire Wire Line
-	8850 2600 8700 2600
-Connection ~ 8700 2600
-Wire Wire Line
-	9000 2600 8850 2600
-Connection ~ 8850 2600
-Wire Wire Line
-	9150 2600 9000 2600
-Connection ~ 9000 2600
-Wire Wire Line
-	9300 2600 9150 2600
-Connection ~ 9150 2600
-Wire Wire Line
-	6900 2600 8000 2600
-Wire Wire Line
-	6900 2050 6900 2600
-Wire Wire Line
-	9700 2600 9300 2600
-Connection ~ 9300 2600
-Wire Wire Line
-	9850 2600 9700 2600
-Connection ~ 9700 2600
-Wire Wire Line
-	10000 2600 9850 2600
-Connection ~ 9850 2600
-Wire Wire Line
-	10150 2600 10000 2600
-Connection ~ 10000 2600
-Wire Wire Line
-	10300 2600 10150 2600
-Connection ~ 10150 2600
-Wire Wire Line
-	10450 2600 10300 2600
-Connection ~ 10300 2600
-Wire Wire Line
-	10450 2600 10600 2600
-Connection ~ 10450 2600
-Wire Wire Line
-	10750 2600 10600 2600
-Connection ~ 10600 2600
-Wire Wire Line
-	4150 2600 4300 2600
-Connection ~ 6900 2600
-Connection ~ 4300 2600
-Wire Wire Line
-	4300 2600 4450 2600
-Connection ~ 4450 2600
-Wire Wire Line
-	4450 2600 4600 2600
-Connection ~ 4600 2600
-Wire Wire Line
-	4600 2600 4750 2600
-Connection ~ 4750 2600
-Wire Wire Line
-	4750 2600 4900 2600
-Connection ~ 4900 2600
-Wire Wire Line
-	4900 2600 5050 2600
-Connection ~ 5050 2600
-Wire Wire Line
-	5050 2600 5200 2600
-Connection ~ 5200 2600
-Wire Wire Line
-	5200 2600 5600 2600
-Connection ~ 5600 2600
-Wire Wire Line
-	5600 2600 5750 2600
-Connection ~ 5750 2600
-Wire Wire Line
-	5750 2600 5900 2600
-Connection ~ 5900 2600
-Wire Wire Line
-	5900 2600 6050 2600
-Connection ~ 6050 2600
-Wire Wire Line
-	6050 2600 6200 2600
-Connection ~ 6200 2600
-Wire Wire Line
-	6200 2600 6350 2600
-Connection ~ 6350 2600
-Wire Wire Line
-	6350 2600 6500 2600
-Connection ~ 6500 2600
-Wire Wire Line
-	6500 2600 6650 2600
-Connection ~ 6650 2600
-Wire Wire Line
-	6650 2600 6900 2600
-Wire Wire Line
-	4100 2250 4150 2250
-Wire Wire Line
-	5550 2250 5600 2250
-Wire Wire Line
-	7000 2150 5750 2150
-Wire Wire Line
-	5250 2150 4300 2150
-Wire Wire Line
-	4100 1850 4450 1850
-Wire Wire Line
-	5250 1750 4600 1750
-Wire Wire Line
-	5550 1850 5900 1850
-Wire Wire Line
-	7000 1750 6050 1750
-Wire Wire Line
-	5550 1450 6200 1450
-Wire Wire Line
-	5550 1350 6350 1350
-Wire Wire Line
-	5550 950  6650 950 
-Wire Wire Line
-	5250 950  5200 950 
-Wire Wire Line
-	4100 1050 5050 1050
-Wire Wire Line
-	5600 2300 5600 2250
-Connection ~ 5600 2250
-Wire Wire Line
-	5600 2250 7000 2250
-Wire Wire Line
-	5750 2300 5750 2150
-Connection ~ 5750 2150
-Wire Wire Line
-	5750 2150 5550 2150
-Wire Wire Line
-	5900 2300 5900 1850
-Connection ~ 5900 1850
-Wire Wire Line
-	5900 1850 7000 1850
-Wire Wire Line
-	6050 2300 6050 1750
-Connection ~ 6050 1750
-Wire Wire Line
-	6050 1750 5550 1750
-Wire Wire Line
-	6200 2300 6200 1450
-Connection ~ 6200 1450
-Wire Wire Line
-	6200 1450 7000 1450
-Wire Wire Line
-	6350 2300 6350 1350
-Connection ~ 6350 1350
-Wire Wire Line
-	6350 1350 7000 1350
-Wire Wire Line
-	6500 2300 6500 1050
-Wire Wire Line
-	5550 1050 6500 1050
-Connection ~ 6500 1050
-Wire Wire Line
-	6500 1050 7000 1050
-Wire Wire Line
-	6650 2300 6650 950 
-Connection ~ 6650 950 
-Wire Wire Line
-	6650 950  7000 950 
-Wire Wire Line
-	4150 2300 4150 2250
-Connection ~ 4150 2250
-Wire Wire Line
-	4150 2250 5250 2250
-Wire Wire Line
-	4300 2300 4300 2150
-Connection ~ 4300 2150
-Wire Wire Line
-	4300 2150 4100 2150
-Wire Wire Line
-	4450 2300 4450 1850
-Connection ~ 4450 1850
-Wire Wire Line
-	4450 1850 5250 1850
-Wire Wire Line
-	4600 2300 4600 1750
-Connection ~ 4600 1750
-Wire Wire Line
-	4600 1750 4100 1750
-Wire Wire Line
-	4750 2300 4750 1450
-Wire Wire Line
-	4100 1450 4750 1450
-Connection ~ 4750 1450
-Wire Wire Line
-	4750 1450 5250 1450
-Wire Wire Line
-	4900 2300 4900 1350
-Wire Wire Line
-	4100 1350 4900 1350
-Connection ~ 4900 1350
-Wire Wire Line
-	4900 1350 5250 1350
-Wire Wire Line
-	5050 2300 5050 1050
-Connection ~ 5050 1050
-Wire Wire Line
-	5050 1050 5250 1050
-Wire Wire Line
-	5200 2300 5200 950 
-Connection ~ 5200 950 
-Wire Wire Line
-	5200 950  4100 950 
-Wire Wire Line
-	8100 850  8100 1150
-Connection ~ 8100 1150
-Wire Wire Line
-	6800 850  6800 1150
-Connection ~ 6800 1150
+	7950 2750 7950 2800
 Text GLabel 3650 4700 0    50   Input ~ 0
 CS0
-$Comp
-L Connector_Generic:Conn_01x04 J3
-U 1 1 61B9C93F
-P 8800 4700
-F 0 "J3" H 8880 4692 50  0000 L CNN
-F 1 "SPI Header 0" H 8880 4601 50  0000 L CNN
-F 2 "" H 8800 4700 50  0001 C CNN
-F 3 "~" H 8800 4700 50  0001 C CNN
-	1    8800 4700
-	1    0    0    -1  
-$EndComp
-Text GLabel 8500 4600 0    50   Input ~ 0
+Text GLabel 7950 4750 0    50   Input ~ 0
 CS0
 Wire Wire Line
-	8600 4600 8500 4600
+	8050 4750 7950 4750
 Wire Wire Line
-	8500 4700 8600 4700
+	7950 4850 8050 4850
 Wire Wire Line
-	8500 4800 8600 4800
+	7950 4950 8050 4950
 Wire Wire Line
-	8500 4900 8600 4900
+	7950 5050 8050 5050
 Text GLabel 6450 4700 2    50   Input ~ 0
 DA2
 Text GLabel 6450 4600 2    50   Input ~ 0
@@ -1433,33 +322,33 @@ Text GLabel 6450 5200 2    50   Input ~ 0
 DD3
 Text GLabel 6450 5100 2    50   Input ~ 0
 DD4
-Text GLabel 9750 4700 0    50   Input ~ 0
+Text GLabel 9200 4850 0    50   Input ~ 0
 MOSI0
-Text GLabel 9750 4800 0    50   Input ~ 0
+Text GLabel 9200 4950 0    50   Input ~ 0
 MISO0
-Text GLabel 9750 4900 0    50   Input ~ 0
+Text GLabel 9200 5050 0    50   Input ~ 0
 SCK0
 $Comp
 L Connector_Generic:Conn_01x04 J4
 U 1 1 61D2A9C1
-P 10050 4700
-F 0 "J4" H 10130 4692 50  0000 L CNN
-F 1 "SPI Header 1" H 10130 4601 50  0000 L CNN
-F 2 "" H 10050 4700 50  0001 C CNN
-F 3 "~" H 10050 4700 50  0001 C CNN
-	1    10050 4700
+P 9500 4850
+F 0 "J4" H 9580 4842 50  0000 L CNN
+F 1 "SPI Header 1" H 9580 4751 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 9500 4850 50  0001 C CNN
+F 3 "~" H 9500 4850 50  0001 C CNN
+	1    9500 4850
 	1    0    0    -1  
 $EndComp
-Text GLabel 9750 4600 0    50   Input ~ 0
+Text GLabel 9200 4750 0    50   Input ~ 0
 CS0
 Wire Wire Line
-	9850 4600 9750 4600
+	9300 4750 9200 4750
 Wire Wire Line
-	9750 4700 9850 4700
+	9200 4850 9300 4850
 Wire Wire Line
-	9750 4800 9850 4800
+	9200 4950 9300 4950
 Wire Wire Line
-	9750 4900 9850 4900
+	9200 5050 9300 5050
 Text GLabel 3650 5300 0    50   Input ~ 0
 MOSI1
 Text GLabel 3650 3800 0    50   Input ~ 0
@@ -1526,4 +415,836 @@ Wire Wire Line
 	3950 4400 3650 4400
 Wire Wire Line
 	3950 4500 3650 4500
+$Comp
+L Connector_Generic:Conn_01x03 J5
+U 1 1 616A2375
+P 2950 6100
+F 0 "J5" H 3030 6142 50  0000 L CNN
+F 1 "MIDI IN" H 3030 6051 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 2950 6100 50  0001 C CNN
+F 3 "~" H 2950 6100 50  0001 C CNN
+	1    2950 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J6
+U 1 1 616A3061
+P 2950 6700
+F 0 "J6" H 3030 6742 50  0000 L CNN
+F 1 "MIDI OUT" H 3030 6651 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 2950 6700 50  0001 C CNN
+F 3 "~" H 2950 6700 50  0001 C CNN
+	1    2950 6700
+	1    0    0    -1  
+$EndComp
+Text GLabel 2600 6000 0    50   Input ~ 0
+MIDREC
+Text GLabel 2600 6600 0    50   Input ~ 0
+MIDITRANS
+Wire Wire Line
+	2750 6000 2600 6000
+Wire Wire Line
+	2750 6600 2600 6600
+$Comp
+L power:+5V #PWR0115
+U 1 1 616DBE5A
+P 2000 5850
+F 0 "#PWR0115" H 2000 5700 50  0001 C CNN
+F 1 "+5V" H 2015 6023 50  0000 C CNN
+F 2 "" H 2000 5850 50  0001 C CNN
+F 3 "" H 2000 5850 50  0001 C CNN
+	1    2000 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0116
+U 1 1 616DCBBE
+P 2650 6950
+F 0 "#PWR0116" H 2650 6700 50  0001 C CNN
+F 1 "GND" H 2655 6777 50  0000 C CNN
+F 2 "" H 2650 6950 50  0001 C CNN
+F 3 "" H 2650 6950 50  0001 C CNN
+	1    2650 6950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 6800 2650 6800
+Wire Wire Line
+	2650 6800 2650 6950
+Wire Wire Line
+	2750 6200 2650 6200
+Wire Wire Line
+	2650 6200 2650 6800
+Connection ~ 2650 6800
+Wire Wire Line
+	2750 6700 2000 6700
+Wire Wire Line
+	2000 6700 2000 6100
+Wire Wire Line
+	2750 6100 2000 6100
+Connection ~ 2000 6100
+Wire Wire Line
+	2000 6100 2000 5850
+$Comp
+L Device:R_US R35
+U 1 1 6173692B
+P 3250 3900
+F 0 "R35" V 3045 3900 50  0000 C CNN
+F 1 "?" V 3136 3900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3290 3890 50  0001 C CNN
+F 3 "~" H 3250 3900 50  0001 C CNN
+	1    3250 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R36
+U 1 1 6173869F
+P 2500 4000
+F 0 "R36" V 2295 4000 50  0000 C CNN
+F 1 "?" V 2386 4000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2540 3990 50  0001 C CNN
+F 3 "~" H 2500 4000 50  0001 C CNN
+	1    2500 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R37
+U 1 1 6173951E
+P 3250 4100
+F 0 "R37" V 3045 4100 50  0000 C CNN
+F 1 "?" V 3136 4100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3290 4090 50  0001 C CNN
+F 3 "~" H 3250 4100 50  0001 C CNN
+	1    3250 4100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R38
+U 1 1 6173A88C
+P 2500 4200
+F 0 "R38" V 2295 4200 50  0000 C CNN
+F 1 "?" V 2386 4200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2540 4190 50  0001 C CNN
+F 3 "~" H 2500 4200 50  0001 C CNN
+	1    2500 4200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2300 4000 2350 4000
+Wire Wire Line
+	2350 4200 2300 4200
+Wire Wire Line
+	3100 3900 3050 3900
+Wire Wire Line
+	3100 4100 3050 4100
+Wire Wire Line
+	3950 3900 3400 3900
+Wire Wire Line
+	3950 4000 2650 4000
+Wire Wire Line
+	3950 4100 3400 4100
+Wire Wire Line
+	3950 4200 2650 4200
+Wire Wire Line
+	2000 5500 3750 5500
+Connection ~ 3750 5500
+Wire Wire Line
+	3750 5500 3750 6750
+Wire Wire Line
+	2750 4100 2000 4100
+Wire Wire Line
+	2750 3900 2000 3900
+$Comp
+L Device:Thermistor_US TH2
+U 1 1 619360B6
+P 8900 3200
+F 0 "TH2" V 8660 3200 50  0000 C CNN
+F 1 "Thermistor_US" V 8751 3200 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 8900 3200 50  0001 C CNN
+F 3 "~" H 8900 3200 50  0001 C CNN
+	1    8900 3200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8750 3200 8650 3200
+Wire Wire Line
+	9700 3200 9700 3700
+Wire Wire Line
+	9500 3400 10500 3400
+$Comp
+L Device:Thermistor_US TH3
+U 1 1 619DA6B6
+P 8300 3400
+F 0 "TH3" V 8060 3400 50  0000 C CNN
+F 1 "Thermistor_US" V 8151 3400 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 8300 3400 50  0001 C CNN
+F 3 "~" H 8300 3400 50  0001 C CNN
+	1    8300 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Thermistor_US TH1
+U 1 1 619DC3E4
+P 9450 3000
+F 0 "TH1" V 9210 3000 50  0000 C CNN
+F 1 "Thermistor_US" V 9301 3000 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 9450 3000 50  0001 C CNN
+F 3 "~" H 9450 3000 50  0001 C CNN
+	1    9450 3000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9050 3000 9250 3000
+Wire Wire Line
+	9900 3000 9600 3000
+Wire Wire Line
+	9900 3000 9900 3800
+Wire Wire Line
+	10700 3200 9700 3200
+Wire Wire Line
+	10700 3200 10700 3700
+Connection ~ 9700 3200
+Wire Wire Line
+	10900 3000 9900 3000
+Wire Wire Line
+	10900 3000 10900 3800
+Connection ~ 9900 3000
+Wire Wire Line
+	7900 3400 8150 3400
+$Comp
+L Device:R_US R34
+U 1 1 61BEDF6F
+P 9250 3650
+F 0 "R34" V 9045 3650 50  0000 C CNN
+F 1 "?" V 9136 3650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 9290 3640 50  0001 C CNN
+F 3 "~" H 9250 3650 50  0001 C CNN
+	1    9250 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9250 3800 9250 3850
+$Comp
+L Device:LED D5
+U 1 1 61C7A0EA
+P 8650 4000
+F 0 "D5" H 8643 4217 50  0000 C CNN
+F 1 "5V_POW" H 8643 4126 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 8650 4000 50  0001 C CNN
+F 3 "~" H 8650 4000 50  0001 C CNN
+	1    8650 4000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R33
+U 1 1 61C7A0F0
+P 8650 3650
+F 0 "R33" V 8445 3650 50  0000 C CNN
+F 1 "?" V 8536 3650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 8690 3640 50  0001 C CNN
+F 3 "~" H 8650 3650 50  0001 C CNN
+	1    8650 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 3800 8650 3850
+Wire Wire Line
+	9050 3200 9700 3200
+Connection ~ 9500 3400
+Wire Wire Line
+	8450 3400 9500 3400
+Wire Wire Line
+	9600 4100 9600 4300
+Connection ~ 9600 4100
+Wire Wire Line
+	9250 4150 9250 4300
+Wire Wire Line
+	9250 4300 9600 4300
+Connection ~ 9600 4300
+Wire Wire Line
+	9600 4300 9600 4350
+Wire Wire Line
+	8650 4150 8650 4300
+Wire Wire Line
+	8650 4300 9250 4300
+Connection ~ 9250 4300
+Wire Wire Line
+	8650 3500 8650 3200
+Connection ~ 8650 3200
+Wire Wire Line
+	8650 3200 8500 3200
+Wire Wire Line
+	9250 3500 9250 3000
+Connection ~ 9250 3000
+Wire Wire Line
+	9250 3000 9300 3000
+$Comp
+L Device:LED D20
+U 1 1 6224F6A1
+P 9250 4000
+F 0 "D20" H 9243 4217 50  0000 C CNN
+F 1 "12V_POW" H 9243 4126 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 9250 4000 50  0001 C CNN
+F 3 "~" H 9250 4000 50  0001 C CNN
+	1    9250 4000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D21
+U 1 1 622BF7F7
+P 2900 4100
+F 0 "D21" H 2893 4317 50  0000 C CNN
+F 1 "POW" H 2893 4226 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 2900 4100 50  0001 C CNN
+F 3 "~" H 2900 4100 50  0001 C CNN
+	1    2900 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D22
+U 1 1 622C0785
+P 2150 4200
+F 0 "D22" H 2143 4417 50  0000 C CNN
+F 1 "POW" H 2143 4326 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 2150 4200 50  0001 C CNN
+F 3 "~" H 2150 4200 50  0001 C CNN
+	1    2150 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D19
+U 1 1 622DBF78
+P 2150 4000
+F 0 "D19" H 2143 4217 50  0000 C CNN
+F 1 "POW" H 2143 4126 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 2150 4000 50  0001 C CNN
+F 3 "~" H 2150 4000 50  0001 C CNN
+	1    2150 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 4200 2000 5500
+Wire Wire Line
+	2000 3900 2000 4000
+Wire Wire Line
+	2000 4100 2000 4200
+Connection ~ 2000 4200
+Wire Wire Line
+	2000 4100 2000 4000
+Connection ~ 2000 4100
+Connection ~ 2000 4000
+$Comp
+L power:+3.3V #PWR?
+U 1 1 623E2584
+P 8600 800
+F 0 "#PWR?" H 8600 650 50  0001 C CNN
+F 1 "+3.3V" H 8615 973 50  0000 C CNN
+F 2 "" H 8600 800 50  0001 C CNN
+F 3 "" H 8600 800 50  0001 C CNN
+	1    8600 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J?
+U 1 1 626A8EDE
+P 8250 4950
+F 0 "J?" H 8330 4992 50  0000 L CNN
+F 1 "Conn_01x05" H 8330 4901 50  0000 L CNN
+F 2 "" H 8250 4950 50  0001 C CNN
+F 3 "~" H 8250 4950 50  0001 C CNN
+	1    8250 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+10V #PWR?
+U 1 1 626A98C8
+P 7500 5150
+F 0 "#PWR?" H 7500 5000 50  0001 C CNN
+F 1 "+10V" H 7515 5323 50  0000 C CNN
+F 2 "" H 7500 5150 50  0001 C CNN
+F 3 "" H 7500 5150 50  0001 C CNN
+	1    7500 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 5150 8050 5150
+$Comp
+L Diode:BZT52Bxx D?
+U 1 1 62774536
+P 4900 2600
+F 0 "D?" H 4900 2817 50  0000 C CNN
+F 1 "4.3v Zener" H 4900 2726 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 4900 2425 50  0001 C CNN
+F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bzt52b2v4.pdf" H 4900 2600 50  0001 C CNN
+	1    4900 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:BZT52Bxx D?
+U 1 1 6277453C
+P 5050 2600
+F 0 "D?" H 5050 2817 50  0000 C CNN
+F 1 "4.3v Zener" H 5050 2726 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 5050 2425 50  0001 C CNN
+F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bzt52b2v4.pdf" H 5050 2600 50  0001 C CNN
+	1    5050 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:BZT52Bxx D?
+U 1 1 62774542
+P 5200 2600
+F 0 "D?" H 5200 2817 50  0000 C CNN
+F 1 "4.3v Zener" H 5200 2726 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 5200 2425 50  0001 C CNN
+F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bzt52b2v4.pdf" H 5200 2600 50  0001 C CNN
+	1    5200 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:BZT52Bxx D?
+U 1 1 62774548
+P 5350 2600
+F 0 "D?" H 5350 2817 50  0000 C CNN
+F 1 "4.3v Zener" H 5350 2726 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 5350 2425 50  0001 C CNN
+F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bzt52b2v4.pdf" H 5350 2600 50  0001 C CNN
+	1    5350 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:BZT52Bxx D?
+U 1 1 6277454E
+P 5500 2600
+F 0 "D?" H 5500 2817 50  0000 C CNN
+F 1 "4.3v Zener" H 5500 2726 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 5500 2425 50  0001 C CNN
+F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bzt52b2v4.pdf" H 5500 2600 50  0001 C CNN
+	1    5500 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:BZT52Bxx D?
+U 1 1 62774554
+P 5650 2600
+F 0 "D?" H 5650 2817 50  0000 C CNN
+F 1 "4.3v Zener" H 5650 2726 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 5650 2425 50  0001 C CNN
+F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bzt52b2v4.pdf" H 5650 2600 50  0001 C CNN
+	1    5650 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:BZT52Bxx D?
+U 1 1 6277455A
+P 5800 2600
+F 0 "D?" H 5800 2817 50  0000 C CNN
+F 1 "4.3v Zener" H 5800 2726 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 5800 2425 50  0001 C CNN
+F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bzt52b2v4.pdf" H 5800 2600 50  0001 C CNN
+	1    5800 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:BZT52Bxx D?
+U 1 1 62774560
+P 5950 2600
+F 0 "D?" H 5950 2817 50  0000 C CNN
+F 1 "4.3v Zener" H 5950 2726 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 5950 2425 50  0001 C CNN
+F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bzt52b2v4.pdf" H 5950 2600 50  0001 C CNN
+	1    5950 2600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5950 2750 5800 2750
+Wire Wire Line
+	5800 2750 5650 2750
+Connection ~ 5800 2750
+Wire Wire Line
+	5650 2750 5500 2750
+Connection ~ 5650 2750
+Wire Wire Line
+	5350 2700 5350 2750
+Wire Wire Line
+	5500 2750 5350 2750
+Connection ~ 5500 2750
+Connection ~ 5350 2750
+Wire Wire Line
+	5200 2750 5350 2750
+Wire Wire Line
+	5050 2750 5200 2750
+Connection ~ 5200 2750
+Wire Wire Line
+	4900 2750 5050 2750
+Connection ~ 5050 2750
+$Comp
+L Diode:BZT52Bxx D?
+U 1 1 62754391
+P 7150 2600
+F 0 "D?" H 7150 2817 50  0000 C CNN
+F 1 "4.3v Zener" H 7150 2726 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 7150 2425 50  0001 C CNN
+F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bzt52b2v4.pdf" H 7150 2600 50  0001 C CNN
+	1    7150 2600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7150 2750 7000 2750
+Connection ~ 7000 2750
+$Comp
+L Diode:BZT52Bxx D?
+U 1 1 6274557A
+P 7000 2600
+F 0 "D?" H 7000 2817 50  0000 C CNN
+F 1 "4.3v Zener" H 7000 2726 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 7000 2425 50  0001 C CNN
+F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bzt52b2v4.pdf" H 7000 2600 50  0001 C CNN
+	1    7000 2600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7000 2750 6850 2750
+Connection ~ 6850 2750
+$Comp
+L Diode:BZT52Bxx D?
+U 1 1 62736763
+P 6850 2600
+F 0 "D?" H 6850 2817 50  0000 C CNN
+F 1 "4.3v Zener" H 6850 2726 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 6850 2425 50  0001 C CNN
+F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bzt52b2v4.pdf" H 6850 2600 50  0001 C CNN
+	1    6850 2600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6850 2750 6700 2750
+Connection ~ 6700 2750
+$Comp
+L Diode:BZT52Bxx D?
+U 1 1 62727747
+P 6700 2600
+F 0 "D?" H 6700 2817 50  0000 C CNN
+F 1 "4.3v Zener" H 6700 2726 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 6700 2425 50  0001 C CNN
+F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bzt52b2v4.pdf" H 6700 2600 50  0001 C CNN
+	1    6700 2600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6700 2750 6550 2750
+$Comp
+L Diode:BZT52Bxx D?
+U 1 1 6271873C
+P 6550 2600
+F 0 "D?" H 6550 2817 50  0000 C CNN
+F 1 "4.3v Zener" H 6550 2726 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 6550 2425 50  0001 C CNN
+F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bzt52b2v4.pdf" H 6550 2600 50  0001 C CNN
+	1    6550 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:BZT52Bxx D?
+U 1 1 62709687
+P 6400 2600
+F 0 "D?" H 6400 2817 50  0000 C CNN
+F 1 "4.3v Zener" H 6400 2726 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 6400 2425 50  0001 C CNN
+F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bzt52b2v4.pdf" H 6400 2600 50  0001 C CNN
+	1    6400 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:BZT52Bxx D?
+U 1 1 626FA69A
+P 6250 2600
+F 0 "D?" H 6250 2817 50  0000 C CNN
+F 1 "4.3v Zener" H 6250 2726 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 6250 2425 50  0001 C CNN
+F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bzt52b2v4.pdf" H 6250 2600 50  0001 C CNN
+	1    6250 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:BZT52Bxx D2
+U 1 1 61891874
+P 6100 2600
+F 0 "D2" H 6100 2817 50  0000 C CNN
+F 1 "4.3v Zener" H 6100 2726 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 6100 2425 50  0001 C CNN
+F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bzt52b2v4.pdf" H 6100 2600 50  0001 C CNN
+	1    6100 2600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6400 2750 6250 2750
+Connection ~ 6250 2750
+Wire Wire Line
+	6250 2750 6100 2750
+Connection ~ 6400 2750
+Connection ~ 6550 2750
+Wire Wire Line
+	6550 2750 6400 2750
+$Comp
+L Connector_Generic:Conn_02x16_Top_Bottom J?
+U 1 1 6188DECB
+P 7450 1550
+F 0 "J?" H 7500 2467 50  0000 C CNN
+F 1 "Conn_02x16_Top_Bottom" H 7500 2376 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x16_P2.54mm_Vertical" H 7450 1550 50  0001 C CNN
+F 3 "~" H 7450 1550 50  0001 C CNN
+	1    7450 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 618BFAC2
+P 8100 800
+F 0 "#PWR?" H 8100 650 50  0001 C CNN
+F 1 "+12V" H 8115 973 50  0000 C CNN
+F 2 "" H 8100 800 50  0001 C CNN
+F 3 "" H 8100 800 50  0001 C CNN
+	1    8100 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 618C6CC3
+P 8350 800
+F 0 "#PWR?" H 8350 650 50  0001 C CNN
+F 1 "+5V" H 8365 973 50  0000 C CNN
+F 2 "" H 8350 800 50  0001 C CNN
+F 3 "" H 8350 800 50  0001 C CNN
+	1    8350 800 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 2750 5950 2750
+Connection ~ 6100 2750
+Connection ~ 5950 2750
+Text GLabel 4750 1050 0    50   Input ~ 0
+DA3
+Text GLabel 4750 1250 0    50   Input ~ 0
+DB1
+Text GLabel 4750 1450 0    50   Input ~ 0
+DB3
+Text GLabel 4750 1650 0    50   Input ~ 0
+DC1
+Text GLabel 4750 1850 0    50   Input ~ 0
+DC3
+Text GLabel 4750 2050 0    50   Input ~ 0
+DD1
+Text GLabel 4750 2250 0    50   Input ~ 0
+DD3
+Text GLabel 4750 950  0    50   Input ~ 0
+DA2
+Text GLabel 4750 1150 0    50   Input ~ 0
+DA4
+Text GLabel 4750 1350 0    50   Input ~ 0
+DB2
+Text GLabel 4750 1550 0    50   Input ~ 0
+DB4
+Text GLabel 4750 1950 0    50   Input ~ 0
+DC4
+Text GLabel 4750 2150 0    50   Input ~ 0
+DD2
+Text GLabel 4750 2350 0    50   Input ~ 0
+DD4
+Text GLabel 4750 1750 0    50   Input ~ 0
+DC2
+Text GLabel 4750 850  0    50   Input ~ 0
+DA1
+Wire Wire Line
+	7250 850  7150 850 
+Wire Wire Line
+	7250 950  7000 950 
+Wire Wire Line
+	7250 1050 6850 1050
+Wire Wire Line
+	7250 1150 6700 1150
+Wire Wire Line
+	4750 1250 6550 1250
+Wire Wire Line
+	7250 1350 6400 1350
+Wire Wire Line
+	7250 1450 6250 1450
+Wire Wire Line
+	4750 1550 6100 1550
+Wire Wire Line
+	7250 1650 5950 1650
+Wire Wire Line
+	7250 1750 5800 1750
+Wire Wire Line
+	7250 1850 5650 1850
+Wire Wire Line
+	4750 1950 5500 1950
+Wire Wire Line
+	7250 2050 5350 2050
+Wire Wire Line
+	4750 2150 5200 2150
+Wire Wire Line
+	7250 2250 5050 2250
+Wire Wire Line
+	4750 2350 4900 2350
+Wire Wire Line
+	4900 2450 4900 2350
+Connection ~ 4900 2350
+Wire Wire Line
+	7950 2750 7150 2750
+Connection ~ 7150 2750
+Wire Wire Line
+	7750 2350 7950 2350
+Wire Wire Line
+	7950 2350 7950 2750
+Connection ~ 7950 2750
+Wire Wire Line
+	7750 2250 7950 2250
+Wire Wire Line
+	7950 2250 7950 2350
+Connection ~ 7950 2350
+Wire Wire Line
+	7750 2150 7950 2150
+Wire Wire Line
+	7950 2150 7950 2250
+Connection ~ 7950 2250
+Wire Wire Line
+	7750 2050 7950 2050
+Wire Wire Line
+	7950 2050 7950 2150
+Connection ~ 7950 2150
+Wire Wire Line
+	7750 850  8100 850 
+Wire Wire Line
+	8100 850  8100 800 
+Wire Wire Line
+	7750 950  8100 950 
+Wire Wire Line
+	8100 950  8100 850 
+Connection ~ 8100 850 
+Wire Wire Line
+	7750 1050 8100 1050
+Wire Wire Line
+	8100 1050 8100 950 
+Connection ~ 8100 950 
+Wire Wire Line
+	7750 1150 8100 1150
+Wire Wire Line
+	8100 1150 8100 1050
+Connection ~ 8100 1050
+Wire Wire Line
+	8350 1250 8350 800 
+Wire Wire Line
+	7750 1250 8350 1250
+Wire Wire Line
+	7750 1350 8350 1350
+Wire Wire Line
+	8350 1350 8350 1250
+Connection ~ 8350 1250
+Wire Wire Line
+	7750 1450 8350 1450
+Wire Wire Line
+	8350 1450 8350 1350
+Connection ~ 8350 1350
+Wire Wire Line
+	7750 1550 8350 1550
+Wire Wire Line
+	8350 1550 8350 1450
+Connection ~ 8350 1450
+Wire Wire Line
+	7750 1650 8600 1650
+Wire Wire Line
+	8600 1650 8600 800 
+Wire Wire Line
+	7750 1750 8600 1750
+Wire Wire Line
+	8600 1750 8600 1650
+Connection ~ 8600 1650
+Wire Wire Line
+	7750 1850 8600 1850
+Wire Wire Line
+	8600 1850 8600 1750
+Connection ~ 8600 1750
+Wire Wire Line
+	7750 1950 8600 1950
+Wire Wire Line
+	8600 1950 8600 1850
+Connection ~ 8600 1850
+Wire Wire Line
+	4900 2350 7250 2350
+Wire Wire Line
+	5050 2450 5050 2250
+Connection ~ 5050 2250
+Wire Wire Line
+	5050 2250 4750 2250
+Wire Wire Line
+	5200 2450 5200 2150
+Connection ~ 5200 2150
+Wire Wire Line
+	5200 2150 7250 2150
+Wire Wire Line
+	5350 2450 5350 2050
+Connection ~ 5350 2050
+Wire Wire Line
+	5350 2050 4750 2050
+Wire Wire Line
+	5500 2450 5500 1950
+Connection ~ 5500 1950
+Wire Wire Line
+	5500 1950 7250 1950
+Wire Wire Line
+	5650 2450 5650 1850
+Connection ~ 5650 1850
+Wire Wire Line
+	5650 1850 4750 1850
+Wire Wire Line
+	5800 2450 5800 1750
+Connection ~ 5800 1750
+Wire Wire Line
+	5800 1750 4750 1750
+Wire Wire Line
+	5950 2450 5950 1650
+Connection ~ 5950 1650
+Wire Wire Line
+	5950 1650 4750 1650
+Wire Wire Line
+	6100 2450 6100 1550
+Connection ~ 6100 1550
+Wire Wire Line
+	6100 1550 7250 1550
+Wire Wire Line
+	6250 2450 6250 1450
+Connection ~ 6250 1450
+Wire Wire Line
+	6250 1450 4750 1450
+Wire Wire Line
+	6400 1350 6400 2450
+Connection ~ 6400 1350
+Wire Wire Line
+	6400 1350 4750 1350
+Wire Wire Line
+	6550 2450 6550 1250
+Connection ~ 6550 1250
+Wire Wire Line
+	6550 1250 7250 1250
+Wire Wire Line
+	6700 2450 6700 1150
+Connection ~ 6700 1150
+Wire Wire Line
+	6700 1150 4750 1150
+Wire Wire Line
+	6850 2450 6850 1050
+Connection ~ 6850 1050
+Wire Wire Line
+	6850 1050 4750 1050
+Wire Wire Line
+	7000 2450 7000 950 
+Connection ~ 7000 950 
+Wire Wire Line
+	7000 950  4750 950 
+Wire Wire Line
+	7150 2450 7150 850 
+Connection ~ 7150 850 
+Wire Wire Line
+	7150 850  4750 850 
 $EndSCHEMATC
