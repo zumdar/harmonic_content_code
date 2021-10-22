@@ -3,4 +3,5 @@
   (lib (name RJHSE-5080-04)(type Legacy)(uri C:/Users/savhe/Downloads/LIB_RJHSE-5080-04/RJHSE-5080-04/KiCad/RJHSE-5080-04.lib)(options "")(descr ""))
   (lib (name test-lib)(type Legacy)(uri "C:/Users/savhe/Documents/Harmonic Content/test-lib.lib")(options "")(descr ""))
   (lib (name SparkFun-KiCad-Libraries-master_Libraries_SparkFun-Connectors)(type Legacy)(uri C:/Users/savhe/Downloads/SparkFun-KiCad-Libraries-master_Libraries_SparkFun-Connectors.lib)(options "")(descr ""))
+  (lib (name CentralPCB-rescue)(type Legacy)(uri ${KIPRJMOD}/CentralPCB-rescue.lib)(options "")(descr ""))
 )
