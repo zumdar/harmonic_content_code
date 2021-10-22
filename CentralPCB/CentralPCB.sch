@@ -91,10 +91,10 @@ F 3 "" H 2400 2150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR014
+L power:GND #PWR015
 U 1 1 616B52F2
 P 5500 6250
-F 0 "#PWR014" H 5500 6000 50  0001 C CNN
+F 0 "#PWR015" H 5500 6000 50  0001 C CNN
 F 1 "GND" H 5505 6077 50  0000 C CNN
 F 2 "" H 5500 6250 50  0001 C CNN
 F 3 "" H 5500 6250 50  0001 C CNN
@@ -102,10 +102,10 @@ F 3 "" H 5500 6250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR015
+L power:GND #PWR016
 U 1 1 616B5948
 P 2900 6500
-F 0 "#PWR015" H 2900 6250 50  0001 C CNN
+F 0 "#PWR016" H 2900 6250 50  0001 C CNN
 F 1 "GND" H 2905 6327 50  0000 C CNN
 F 2 "" H 2900 6500 50  0001 C CNN
 F 3 "" H 2900 6500 50  0001 C CNN
@@ -124,10 +124,10 @@ F 3 "https://fscdn.rohm.com/en/products/databook/datasheet/ic/power/linear_regul
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+12V #PWR016
+L power:+12V #PWR017
 U 1 1 61611891
 P 850 7050
-F 0 "#PWR016" H 850 6900 50  0001 C CNN
+F 0 "#PWR017" H 850 6900 50  0001 C CNN
 F 1 "+12V" H 865 7223 50  0000 C CNN
 F 2 "" H 850 7050 50  0001 C CNN
 F 3 "" H 850 7050 50  0001 C CNN
@@ -135,10 +135,10 @@ F 3 "" H 850 7050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR018
+L power:GND #PWR019
 U 1 1 616148AD
 P 1800 7500
-F 0 "#PWR018" H 1800 7250 50  0001 C CNN
+F 0 "#PWR019" H 1800 7250 50  0001 C CNN
 F 1 "GND" H 1805 7327 50  0000 C CNN
 F 2 "" H 1800 7500 50  0001 C CNN
 F 3 "" H 1800 7500 50  0001 C CNN
@@ -146,10 +146,10 @@ F 3 "" H 1800 7500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+10V #PWR017
+L power:+10V #PWR018
 U 1 1 61617614
 P 2700 7050
-F 0 "#PWR017" H 2700 6900 50  0001 C CNN
+F 0 "#PWR018" H 2700 6900 50  0001 C CNN
 F 1 "+10V" H 2715 7223 50  0000 C CNN
 F 2 "" H 2700 7050 50  0001 C CNN
 F 3 "" H 2700 7050 50  0001 C CNN
@@ -162,15 +162,7 @@ Text GLabel 2800 4100 0    50   Input ~ 0
 MISO0
 Text GLabel 5600 4100 2    50   Input ~ 0
 SCK0
-Text GLabel 5000 7200 0    50   Input ~ 0
-MOSI0
-Text GLabel 5000 7300 0    50   Input ~ 0
-MISO0
-Text GLabel 5000 7400 0    50   Input ~ 0
-SCK0
 Text GLabel 2800 3900 0    50   Input ~ 0
-CS0
-Text GLabel 5000 7100 0    50   Input ~ 0
 CS0
 Text GLabel 5600 3900 2    50   Input ~ 0
 DA2
@@ -191,11 +183,11 @@ DD3
 Text GLabel 5600 4300 2    50   Input ~ 0
 DD4
 Text GLabel 9000 2550 0    50   Input ~ 0
-MOSI0
+MOSI1
 Text GLabel 9000 2650 0    50   Input ~ 0
-MISO0
+MISO1
 Text GLabel 9000 2750 0    50   Input ~ 0
-SCK0
+SCK1
 $Comp
 L Connector_Generic:Conn_01x04 J2
 U 1 1 61D2A9C1
@@ -208,7 +200,7 @@ F 3 "~" H 9300 2550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 9000 2450 0    50   Input ~ 0
-CS0
+CS1
 Text GLabel 2800 4500 0    50   Input ~ 0
 MOSI1
 Text GLabel 2800 3000 0    50   Input ~ 0
@@ -380,34 +372,23 @@ $EndComp
 $Comp
 L power:+3.3V #PWR012
 U 1 1 623E2584
-P 10700 4150
-F 0 "#PWR012" H 10700 4000 50  0001 C CNN
-F 1 "+3.3V" H 10715 4323 50  0000 C CNN
-F 2 "" H 10700 4150 50  0001 C CNN
-F 3 "" H 10700 4150 50  0001 C CNN
-	1    10700 4150
+P 11000 4150
+F 0 "#PWR012" H 11000 4000 50  0001 C CNN
+F 1 "+3.3V" H 11015 4323 50  0000 C CNN
+F 2 "" H 11000 4150 50  0001 C CNN
+F 3 "" H 11000 4150 50  0001 C CNN
+	1    11000 4150
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x05 J4
-U 1 1 626A8EDE
-P 5300 7300
-F 0 "J4" H 5380 7342 50  0000 L CNN
-F 1 "DAC Comm" H 5380 7251 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical" H 5300 7300 50  0001 C CNN
-F 3 "~" H 5300 7300 50  0001 C CNN
-	1    5300 7300
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+10V #PWR019
+L power:+10V #PWR013
 U 1 1 626A98C8
-P 4550 7500
-F 0 "#PWR019" H 4550 7350 50  0001 C CNN
-F 1 "+10V" H 4565 7673 50  0000 C CNN
-F 2 "" H 4550 7500 50  0001 C CNN
-F 3 "" H 4550 7500 50  0001 C CNN
-	1    4550 7500
+P 10450 4150
+F 0 "#PWR013" H 10450 4000 50  0001 C CNN
+F 1 "+10V" H 10465 4323 50  0000 C CNN
+F 2 "" H 10450 4150 50  0001 C CNN
+F 3 "" H 10450 4150 50  0001 C CNN
+	1    10450 4150
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -424,12 +405,12 @@ $EndComp
 $Comp
 L power:+5V #PWR011
 U 1 1 618C6CC3
-P 10450 4150
-F 0 "#PWR011" H 10450 4000 50  0001 C CNN
-F 1 "+5V" H 10465 4323 50  0000 C CNN
-F 2 "" H 10450 4150 50  0001 C CNN
-F 3 "" H 10450 4150 50  0001 C CNN
-	1    10450 4150
+P 10750 4150
+F 0 "#PWR011" H 10750 4000 50  0001 C CNN
+F 1 "+5V" H 10765 4323 50  0000 C CNN
+F 2 "" H 10750 4150 50  0001 C CNN
+F 3 "" H 10750 4150 50  0001 C CNN
+	1    10750 4150
 	1    0    0    -1  
 $EndComp
 Text GLabel 6500 4400 0    50   Input ~ 0
@@ -641,10 +622,10 @@ F 3 "https://www.diodes.com/assets/Datasheets/ds18010.pdf" H 6650 5950 50  0001 
 	0    -1   1    0   
 $EndComp
 $Comp
-L power:GND #PWR013
+L power:GND #PWR014
 U 1 1 6161C083
 P 10050 6150
-F 0 "#PWR013" H 10050 5900 50  0001 C CNN
+F 0 "#PWR014" H 10050 5900 50  0001 C CNN
 F 1 "GND" H 10055 5977 50  0000 C CNN
 F 2 "" H 10050 6150 50  0001 C CNN
 F 3 "" H 10050 6150 50  0001 C CNN
@@ -894,9 +875,9 @@ F 3 "" H 5400 2800 50  0001 C CNN
 	1    5400 2800
 	1    0    0    -1  
 $EndComp
-Text GLabel 10200 5300 2    50   Input ~ 0
+Text GLabel 9950 5500 2    50   Input ~ 0
 MIDREC
-Text GLabel 10200 5400 2    50   Input ~ 0
+Text GLabel 9950 5600 2    50   Input ~ 0
 MIDITRANS
 $Comp
 L Connector_Generic:Conn_02x16_Odd_Even J3
@@ -917,69 +898,11 @@ Connection ~ 2900 5850
 Wire Wire Line
 	3100 5850 2900 5850
 Wire Wire Line
-	3100 3700 2800 3700
-Connection ~ 10050 5600
-Wire Wire Line
-	10050 5500 10050 5600
-Wire Wire Line
-	9850 5500 10050 5500
-Wire Wire Line
-	9850 5400 10200 5400
-Wire Wire Line
 	5500 4200 5500 5450
 Wire Wire Line
 	2900 4700 2900 5850
 Wire Wire Line
 	5500 5450 5500 6250
-Wire Wire Line
-	9850 5300 10200 5300
-Connection ~ 10700 4900
-Wire Wire Line
-	10700 5000 10700 4900
-Wire Wire Line
-	9850 5000 10700 5000
-Wire Wire Line
-	10700 4800 10700 4900
-Connection ~ 10700 4800
-Wire Wire Line
-	10700 4150 10700 4800
-Wire Wire Line
-	9850 4900 10700 4900
-Wire Wire Line
-	9850 4800 10700 4800
-Connection ~ 10450 4600
-Wire Wire Line
-	10450 4700 10450 4600
-Wire Wire Line
-	9850 4700 10450 4700
-Connection ~ 10450 4500
-Wire Wire Line
-	10450 4600 10450 4500
-Wire Wire Line
-	9850 4600 10450 4600
-Wire Wire Line
-	10450 4500 10450 4150
-Wire Wire Line
-	9850 4500 10450 4500
-Wire Wire Line
-	10200 4200 10200 4300
-Connection ~ 10200 4200
-Wire Wire Line
-	9850 4200 10200 4200
-Wire Wire Line
-	10200 4300 10200 4400
-Connection ~ 10200 4300
-Wire Wire Line
-	10200 4150 10200 4200
-Wire Wire Line
-	9850 4300 10200 4300
-Wire Wire Line
-	9850 4400 10200 4400
-Connection ~ 10050 5700
-Wire Wire Line
-	10050 5600 10050 5700
-Wire Wire Line
-	9850 5600 10050 5600
 Wire Wire Line
 	8900 5700 9000 5700
 Connection ~ 8900 5700
@@ -1212,8 +1135,6 @@ Connection ~ 8750 6100
 Connection ~ 8900 6100
 Wire Wire Line
 	9850 5700 10050 5700
-Wire Wire Line
-	4550 7500 5100 7500
 Connection ~ 1150 3200
 Connection ~ 1150 3300
 Wire Wire Line
@@ -1307,8 +1228,6 @@ Wire Wire Line
 Wire Wire Line
 	1450 3200 1500 3200
 Wire Wire Line
-	3100 3600 2800 3600
-Wire Wire Line
 	3100 4600 2800 4600
 Wire Wire Line
 	3100 4500 2800 4500
@@ -1352,14 +1271,6 @@ Wire Wire Line
 	9000 2550 9100 2550
 Wire Wire Line
 	9100 2450 9000 2450
-Wire Wire Line
-	5000 7400 5100 7400
-Wire Wire Line
-	5000 7300 5100 7300
-Wire Wire Line
-	5000 7200 5100 7200
-Wire Wire Line
-	5100 7100 5000 7100
 Wire Wire Line
 	850  7050 1250 7050
 Wire Wire Line
@@ -1435,4 +1346,52 @@ F 3 "" H 3800 5350 50  0001 C CNN
 	1    4200 4950
 	1    0    0    -1  
 $EndComp
+Text GLabel 9950 5200 2    50   Input ~ 0
+MOSI0
+Text GLabel 9950 5300 2    50   Input ~ 0
+MISO0
+Text GLabel 9950 5400 2    50   Input ~ 0
+SCK0
+Text GLabel 9950 5100 2    50   Input ~ 0
+CS0
+Text GLabel 9950 4900 2    50   Input ~ 0
+DisplayTX
+Text GLabel 9950 5000 2    50   Input ~ 0
+DisplayRX
+Wire Wire Line
+	9950 5600 9850 5600
+Wire Wire Line
+	9850 5500 9950 5500
+Wire Wire Line
+	9950 5400 9850 5400
+Wire Wire Line
+	9850 5300 9950 5300
+Wire Wire Line
+	9950 5200 9850 5200
+Wire Wire Line
+	9850 5100 9950 5100
+Wire Wire Line
+	9950 5000 9850 5000
+Wire Wire Line
+	9850 4900 9950 4900
+Wire Wire Line
+	9850 4200 10200 4200
+Wire Wire Line
+	10200 4200 10200 4150
+Wire Wire Line
+	9850 4300 10450 4300
+Wire Wire Line
+	10450 4300 10450 4150
+Wire Wire Line
+	9850 4400 10750 4400
+Wire Wire Line
+	10750 4400 10750 4150
+Wire Wire Line
+	9850 4500 11000 4500
+Wire Wire Line
+	11000 4500 11000 4150
+Wire Wire Line
+	3100 3600 2800 3600
+Wire Wire Line
+	2800 3700 3100 3700
 $EndSCHEMATC
