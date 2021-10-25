@@ -1639,8 +1639,6 @@ Connection ~ 3000 5100
 Wire Wire Line
 	3050 5950 3050 6300
 Wire Wire Line
-	3050 5750 3050 5850
-Wire Wire Line
 	3050 5200 3050 5850
 Connection ~ 5350 5450
 Connection ~ 5350 4200

@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:CentralPCB-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -38,12 +39,12 @@ $EndComp
 $Comp
 L power:-12V #PWR03
 U 1 1 6162992E
-P 700 1200
-F 0 "#PWR03" H 700 1300 50  0001 C CNN
-F 1 "-12V" H 715 1373 50  0000 C CNN
-F 2 "" H 700 1200 50  0001 C CNN
-F 3 "" H 700 1200 50  0001 C CNN
-	1    700  1200
+P 550 1200
+F 0 "#PWR03" H 550 1300 50  0001 C CNN
+F 1 "-12V" H 565 1373 50  0000 C CNN
+F 2 "" H 550 1200 50  0001 C CNN
+F 3 "" H 550 1200 50  0001 C CNN
+	1    550  1200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -113,7 +114,7 @@ F 3 "" H 3050 6300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L test-lib:BA7810CP-E2 U3
+L CentralPCB-rescue:BA7810CP-E2-test-lib U3
 U 1 1 61610C90
 P 1800 7050
 F 0 "U3" H 1800 7405 50  0000 C CNN
@@ -257,12 +258,12 @@ $EndComp
 $Comp
 L Device:Thermistor_US TH3
 U 1 1 619DA6B6
-P 1100 1200
-F 0 "TH3" V 860 1200 50  0000 C CNN
-F 1 "Thermistor_US" V 951 1200 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" H 1100 1200 50  0001 C CNN
-F 3 "~" H 1100 1200 50  0001 C CNN
-	1    1100 1200
+P 950 1200
+F 0 "TH3" V 710 1200 50  0000 C CNN
+F 1 "Thermistor_US" V 801 1200 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 950 1200 50  0001 C CNN
+F 3 "~" H 950 1200 50  0001 C CNN
+	1    950  1200
 	0    1    1    0   
 $EndComp
 $Comp
@@ -291,8 +292,8 @@ $Comp
 L Device:LED D1
 U 1 1 61C7A0EA
 P 1450 1800
-F 0 "D1" H 1443 2017 50  0000 C CNN
-F 1 "5V_POW" H 1443 1926 50  0000 C CNN
+F 0 "D1" V 1650 1700 50  0000 C CNN
+F 1 "5V_POW" V 1550 1600 50  0000 C CNN
 F 2 "LED_THT:LED_D3.0mm" H 1450 1800 50  0001 C CNN
 F 3 "~" H 1450 1800 50  0001 C CNN
 	1    1450 1800
@@ -313,8 +314,8 @@ $Comp
 L Device:LED D2
 U 1 1 6224F6A1
 P 2050 1800
-F 0 "D2" H 2043 2017 50  0000 C CNN
-F 1 "12V_POW" H 2043 1926 50  0000 C CNN
+F 0 "D2" V 1950 1950 50  0000 C CNN
+F 1 "12V_POW" V 1850 1950 50  0000 C CNN
 F 2 "LED_THT:LED_D3.0mm" H 2050 1800 50  0001 C CNN
 F 3 "~" H 2050 1800 50  0001 C CNN
 	1    2050 1800
@@ -782,28 +783,6 @@ F 3 "~" H 9150 5700 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:+5V #PWR06
-U 1 1 6222D058
-P 6450 2700
-F 0 "#PWR06" H 6450 2550 50  0001 C CNN
-F 1 "+5V" H 6465 2873 50  0000 C CNN
-F 2 "" H 6450 2700 50  0001 C CNN
-F 3 "" H 6450 2700 50  0001 C CNN
-	1    6450 2700
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR09
-U 1 1 62205F7A
-P 6450 3600
-F 0 "#PWR09" H 6450 3350 50  0001 C CNN
-F 1 "GND" H 6455 3427 50  0000 C CNN
-F 2 "" H 6450 3600 50  0001 C CNN
-F 3 "" H 6450 3600 50  0001 C CNN
-	1    6450 3600
-	1    0    0    -1  
-$EndComp
-$Comp
 L Amplifier_Operational:OP179GS U1
 U 1 1 621C9E2B
 P 6550 3100
@@ -862,8 +841,6 @@ $EndComp
 Wire Wire Line
 	3050 5850 3050 5950
 Connection ~ 3050 5850
-Wire Wire Line
-	5350 4200 5350 5450
 Wire Wire Line
 	5350 5450 5350 6250
 Wire Wire Line
@@ -1113,8 +1090,6 @@ Wire Wire Line
 Connection ~ 2400 1900
 Wire Wire Line
 	2400 1900 2400 2100
-Wire Wire Line
-	1250 1200 2300 1200
 Connection ~ 2300 1200
 Wire Wire Line
 	1850 1000 2500 1000
@@ -1123,7 +1098,7 @@ Wire Wire Line
 Wire Wire Line
 	2050 1600 2050 1650
 Wire Wire Line
-	700  1200 950  1200
+	550  1200 800  1200
 Connection ~ 2700 800 
 Wire Wire Line
 	3700 800  3700 1600
@@ -1222,7 +1197,7 @@ Wire Wire Line
 Wire Wire Line
 	3250 2000 3300 2000
 $Comp
-L teensy:Teensy4.1 U2
+L CentralPCB-rescue:Teensy4.1-teensy U2
 U 1 1 61AF984C
 P 4200 4950
 F 0 "U2" H 4200 7515 50  0000 C CNN
@@ -1512,8 +1487,6 @@ F 3 "" H 4650 7100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5300 2800 5400 2800
-Wire Wire Line
 	3050 2800 3050 5200
 $Comp
 L Connector_Generic:Conn_01x24 J?
@@ -1642,6 +1615,132 @@ Wire Wire Line
 	3050 5200 3050 5850
 Connection ~ 5350 5450
 Connection ~ 5350 4200
+Wire Wire Line
+	5400 2900 5350 2900
+Connection ~ 5350 2900
+Wire Wire Line
+	5400 4200 5350 4200
+$Comp
+L power:+12V #PWR?
+U 1 1 617B4C75
+P 6450 2700
+F 0 "#PWR?" H 6450 2550 50  0001 C CNN
+F 1 "+12V" H 6465 2873 50  0000 C CNN
+F 2 "" H 6450 2700 50  0001 C CNN
+F 3 "" H 6450 2700 50  0001 C CNN
+	1    6450 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-12V #PWR?
+U 1 1 617F806C
+P 6450 3600
+F 0 "#PWR?" H 6450 3700 50  0001 C CNN
+F 1 "-12V" H 6465 3773 50  0000 C CNN
+F 2 "" H 6450 3600 50  0001 C CNN
+F 3 "" H 6450 3600 50  0001 C CNN
+	1    6450 3600
+	-1   0    0    1   
+$EndComp
+Connection ~ 5400 4600
+Wire Wire Line
+	5950 4600 5400 4600
+Connection ~ 5400 4500
+Wire Wire Line
+	5950 4500 5400 4500
+Connection ~ 5400 4400
+Wire Wire Line
+	5950 4400 5400 4400
+Connection ~ 5400 4300
+Wire Wire Line
+	5950 4300 5400 4300
+Connection ~ 5400 4100
+Wire Wire Line
+	5950 4100 5400 4100
+Connection ~ 5400 4000
+Wire Wire Line
+	5950 4000 5400 4000
+Connection ~ 5400 3900
+Wire Wire Line
+	5400 3900 5950 3900
+Connection ~ 5400 3800
+Wire Wire Line
+	5400 3800 5950 3800
+Connection ~ 5400 3700
+Wire Wire Line
+	5400 3700 5950 3700
+Connection ~ 5400 3600
+Wire Wire Line
+	5950 3600 5400 3600
+Connection ~ 5400 3500
+Wire Wire Line
+	5950 3500 5400 3500
+Connection ~ 5400 3400
+Wire Wire Line
+	5400 3400 5950 3400
+Connection ~ 5400 3300
+Wire Wire Line
+	5950 3300 5400 3300
+Connection ~ 5400 3200
+Wire Wire Line
+	5400 3200 5950 3200
+Connection ~ 5400 3100
+Wire Wire Line
+	5950 3100 5400 3100
+Connection ~ 5400 3000
+Wire Wire Line
+	5400 3000 6250 3000
+Connection ~ 5400 2800
+Wire Wire Line
+	5800 2800 5400 2800
+Wire Wire Line
+	5300 5100 5400 5100
+Wire Wire Line
+	5300 5000 5400 5000
+Wire Wire Line
+	5300 4900 5400 4900
+Wire Wire Line
+	5300 4800 5400 4800
+Wire Wire Line
+	5300 4700 5400 4700
+Wire Wire Line
+	5300 4600 5400 4600
+Wire Wire Line
+	5300 4500 5400 4500
+Wire Wire Line
+	5300 4400 5400 4400
+Wire Wire Line
+	5300 4300 5400 4300
+Wire Wire Line
+	5300 4100 5400 4100
+Wire Wire Line
+	5300 4000 5400 4000
+Wire Wire Line
+	5300 3900 5400 3900
+Wire Wire Line
+	5300 3800 5400 3800
+Wire Wire Line
+	5300 3700 5400 3700
+Wire Wire Line
+	5300 3600 5400 3600
+Wire Wire Line
+	5300 3500 5400 3500
+Wire Wire Line
+	5400 3400 5300 3400
+Wire Wire Line
+	5300 3300 5400 3300
+Wire Wire Line
+	5300 3200 5400 3200
+Wire Wire Line
+	5300 3100 5400 3100
+Wire Wire Line
+	5300 3000 5400 3000
+Wire Wire Line
+	5300 2800 5400 2800
+Wire Wire Line
+	5350 4200 5350 5450
+Wire Wire Line
+	5350 2900 5350 4200
 $Comp
 L Connector_Generic:Conn_01x24 J?
 U 1 1 61E76D2E
@@ -1654,103 +1753,38 @@ F 3 "~" H 5600 3900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5800 2800 5400 2800
-Connection ~ 5400 2800
+	1100 1200 2300 1200
+$Comp
+L Device:LED D?
+U 1 1 618879C9
+P 1100 1950
+F 0 "D?" V 1100 1800 50  0000 C CNN
+F 1 "-12V_pow" V 1200 1750 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 1100 1950 50  0001 C CNN
+F 3 "~" H 1100 1950 50  0001 C CNN
+	1    1100 1950
+	0    1    1    0   
+$EndComp
 Wire Wire Line
-	5400 2900 5350 2900
-Connection ~ 5350 2900
+	1100 1450 1100 1200
+Connection ~ 1100 1200
 Wire Wire Line
-	5400 3000 6250 3000
+	1100 1950 1100 2100
 Wire Wire Line
-	5300 3000 5400 3000
-Connection ~ 5400 3000
+	1100 2100 1450 2100
+Connection ~ 1450 2100
+Connection ~ 1100 2100
+$Comp
+L Device:R_US R?
+U 1 1 6197A5BF
+P 1100 1600
+F 0 "R?" V 895 1600 50  0000 C CNN
+F 1 "?" V 986 1600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1140 1590 50  0001 C CNN
+F 3 "~" H 1100 1600 50  0001 C CNN
+	1    1100 1600
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	5300 3100 5400 3100
-Wire Wire Line
-	5950 3100 5400 3100
-Connection ~ 5400 3100
-Wire Wire Line
-	5300 3200 5400 3200
-Wire Wire Line
-	5400 3200 5950 3200
-Connection ~ 5400 3200
-Wire Wire Line
-	5300 3300 5400 3300
-Wire Wire Line
-	5950 3300 5400 3300
-Connection ~ 5400 3300
-Wire Wire Line
-	5400 3400 5300 3400
-Wire Wire Line
-	5400 3400 5950 3400
-Connection ~ 5400 3400
-Wire Wire Line
-	5300 3500 5400 3500
-Wire Wire Line
-	5950 3500 5400 3500
-Connection ~ 5400 3500
-Wire Wire Line
-	5950 3600 5400 3600
-Wire Wire Line
-	5300 3600 5400 3600
-Connection ~ 5400 3600
-Wire Wire Line
-	5300 3700 5400 3700
-Wire Wire Line
-	5400 3700 5950 3700
-Connection ~ 5400 3700
-Wire Wire Line
-	5300 3800 5400 3800
-Wire Wire Line
-	5400 3800 5950 3800
-Connection ~ 5400 3800
-Wire Wire Line
-	5300 3900 5400 3900
-Wire Wire Line
-	5400 3900 5950 3900
-Connection ~ 5400 3900
-Wire Wire Line
-	5350 2900 5350 4200
-Wire Wire Line
-	5300 4000 5400 4000
-Wire Wire Line
-	5950 4000 5400 4000
-Connection ~ 5400 4000
-Wire Wire Line
-	5300 4100 5400 4100
-Wire Wire Line
-	5950 4100 5400 4100
-Connection ~ 5400 4100
-Wire Wire Line
-	5400 4200 5350 4200
-Wire Wire Line
-	5300 4300 5400 4300
-Wire Wire Line
-	5300 4400 5400 4400
-Wire Wire Line
-	5300 4500 5400 4500
-Wire Wire Line
-	5300 4600 5400 4600
-Wire Wire Line
-	5300 4700 5400 4700
-Wire Wire Line
-	5300 4800 5400 4800
-Wire Wire Line
-	5300 4900 5400 4900
-Wire Wire Line
-	5300 5000 5400 5000
-Wire Wire Line
-	5300 5100 5400 5100
-Wire Wire Line
-	5950 4300 5400 4300
-Connection ~ 5400 4300
-Wire Wire Line
-	5950 4400 5400 4400
-Connection ~ 5400 4400
-Wire Wire Line
-	5950 4500 5400 4500
-Connection ~ 5400 4500
-Wire Wire Line
-	5950 4600 5400 4600
-Connection ~ 5400 4600
+	1100 1750 1100 1800
 $EndSCHEMATC
