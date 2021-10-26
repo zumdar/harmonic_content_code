@@ -1123,7 +1123,7 @@ Wire Wire Line
 Wire Wire Line
 	2050 1600 2050 1650
 Wire Wire Line
-	700  1200 950  1200
+	700  1200 850  1200
 Connection ~ 2700 800 
 Wire Wire Line
 	3700 800  3700 1600
@@ -1753,4 +1753,38 @@ Connection ~ 5400 4500
 Wire Wire Line
 	5950 4600 5400 4600
 Connection ~ 5400 4600
+$Comp
+L Device:R_US R?
+U 1 1 617A5B00
+P 850 1450
+F 0 "R?" V 645 1450 50  0000 C CNN
+F 1 "?" V 736 1450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 890 1440 50  0001 C CNN
+F 3 "~" H 850 1450 50  0001 C CNN
+	1    850  1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 617A5B06
+P 850 1800
+F 0 "D?" H 843 2017 50  0000 C CNN
+F 1 "12V_POW" H 843 1926 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 850 1800 50  0001 C CNN
+F 3 "~" H 850 1800 50  0001 C CNN
+	1    850  1800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	850  1950 850  2100
+Wire Wire Line
+	850  1600 850  1650
+Wire Wire Line
+	850  2100 1450 2100
+Connection ~ 1450 2100
+Wire Wire Line
+	850  1300 850  1200
+Connection ~ 850  1200
+Wire Wire Line
+	850  1200 950  1200
 $EndSCHEMATC

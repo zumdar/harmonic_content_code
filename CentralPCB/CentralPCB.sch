@@ -14,10 +14,10 @@ Comment3 ""
 Comment4 "Author: Savannah Hearn"
 $EndDescr
 $Comp
-L Device:LED D3
+L Device:LED D4
 U 1 1 615FEF7B
 P 1550 3100
-F 0 "D3" H 1543 3317 50  0000 C CNN
+F 0 "D4" H 1543 3317 50  0000 C CNN
 F 1 "POW" H 1543 3226 50  0000 C CNN
 F 2 "LED_THT:LED_D3.0mm" H 1550 3100 50  0001 C CNN
 F 3 "~" H 1550 3100 50  0001 C CNN
@@ -200,10 +200,10 @@ MIDIREC
 Text GLabel 2300 3700 0    50   Input ~ 0
 MIDITRANS
 $Comp
-L Device:R_US R3
+L Device:R_US R4
 U 1 1 6173692B
 P 1900 3100
-F 0 "R3" V 1695 3100 50  0000 C CNN
+F 0 "R4" V 1695 3100 50  0000 C CNN
 F 1 "?" V 1786 3100 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 1940 3090 50  0001 C CNN
 F 3 "~" H 1900 3100 50  0001 C CNN
@@ -211,10 +211,10 @@ F 3 "~" H 1900 3100 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_US R4
+L Device:R_US R5
 U 1 1 6173869F
 P 1150 3200
-F 0 "R4" V 945 3200 50  0000 C CNN
+F 0 "R5" V 945 3200 50  0000 C CNN
 F 1 "?" V 1036 3200 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 1190 3190 50  0001 C CNN
 F 3 "~" H 1150 3200 50  0001 C CNN
@@ -222,10 +222,10 @@ F 3 "~" H 1150 3200 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_US R5
+L Device:R_US R6
 U 1 1 6173951E
 P 1900 3300
-F 0 "R5" V 1695 3300 50  0000 C CNN
+F 0 "R6" V 1695 3300 50  0000 C CNN
 F 1 "?" V 1786 3300 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 1940 3290 50  0001 C CNN
 F 3 "~" H 1900 3300 50  0001 C CNN
@@ -233,10 +233,10 @@ F 3 "~" H 1900 3300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_US R6
+L Device:R_US R7
 U 1 1 6173A88C
 P 1150 3400
-F 0 "R6" V 945 3400 50  0000 C CNN
+F 0 "R7" V 945 3400 50  0000 C CNN
 F 1 "?" V 1036 3400 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 1190 3390 50  0001 C CNN
 F 3 "~" H 1150 3400 50  0001 C CNN
@@ -277,10 +277,10 @@ F 3 "~" H 2250 800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_US R2
+L Device:R_US R3
 U 1 1 61BEDF6F
 P 2050 1450
-F 0 "R2" V 1845 1450 50  0000 C CNN
+F 0 "R3" V 1845 1450 50  0000 C CNN
 F 1 "?" V 1936 1450 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 2090 1440 50  0001 C CNN
 F 3 "~" H 2050 1450 50  0001 C CNN
@@ -288,10 +288,10 @@ F 3 "~" H 2050 1450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:LED D1
+L Device:LED D2
 U 1 1 61C7A0EA
 P 1450 1800
-F 0 "D1" H 1443 2017 50  0000 C CNN
+F 0 "D2" H 1443 2017 50  0000 C CNN
 F 1 "5V_POW" H 1443 1926 50  0000 C CNN
 F 2 "LED_THT:LED_D3.0mm" H 1450 1800 50  0001 C CNN
 F 3 "~" H 1450 1800 50  0001 C CNN
@@ -299,10 +299,10 @@ F 3 "~" H 1450 1800 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_US R1
+L Device:R_US R2
 U 1 1 61C7A0F0
 P 1450 1450
-F 0 "R1" V 1245 1450 50  0000 C CNN
+F 0 "R2" V 1245 1450 50  0000 C CNN
 F 1 "?" V 1336 1450 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 1490 1440 50  0001 C CNN
 F 3 "~" H 1450 1450 50  0001 C CNN
@@ -310,10 +310,10 @@ F 3 "~" H 1450 1450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:LED D2
+L Device:LED D3
 U 1 1 6224F6A1
 P 2050 1800
-F 0 "D2" H 2043 2017 50  0000 C CNN
+F 0 "D3" H 2043 2017 50  0000 C CNN
 F 1 "12V_POW" H 2043 1926 50  0000 C CNN
 F 2 "LED_THT:LED_D3.0mm" H 2050 1800 50  0001 C CNN
 F 3 "~" H 2050 1800 50  0001 C CNN
@@ -321,10 +321,10 @@ F 3 "~" H 2050 1800 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D5
+L Device:LED D6
 U 1 1 622BF7F7
 P 1550 3300
-F 0 "D5" H 1543 3517 50  0000 C CNN
+F 0 "D6" H 1543 3517 50  0000 C CNN
 F 1 "POW" H 1543 3426 50  0000 C CNN
 F 2 "LED_THT:LED_D3.0mm" H 1550 3300 50  0001 C CNN
 F 3 "~" H 1550 3300 50  0001 C CNN
@@ -332,10 +332,10 @@ F 3 "~" H 1550 3300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:LED D6
+L Device:LED D7
 U 1 1 622C0785
 P 800 3400
-F 0 "D6" H 793 3617 50  0000 C CNN
+F 0 "D7" H 793 3617 50  0000 C CNN
 F 1 "POW" H 793 3526 50  0000 C CNN
 F 2 "LED_THT:LED_D3.0mm" H 800 3400 50  0001 C CNN
 F 3 "~" H 800 3400 50  0001 C CNN
@@ -343,10 +343,10 @@ F 3 "~" H 800 3400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:LED D4
+L Device:LED D5
 U 1 1 622DBF78
 P 800 3200
-F 0 "D4" H 793 3417 50  0000 C CNN
+F 0 "D5" H 793 3417 50  0000 C CNN
 F 1 "POW" H 793 3326 50  0000 C CNN
 F 2 "LED_THT:LED_D3.0mm" H 800 3200 50  0001 C CNN
 F 3 "~" H 800 3200 50  0001 C CNN
@@ -419,10 +419,10 @@ DC2
 Text GLabel 6500 4200 0    50   Input ~ 0
 DA1
 $Comp
-L Diode:BZT52Bxx D22
+L Diode:BZT52Bxx D23
 U 1 1 61D7310D
 P 8900 5950
-F 0 "D22" H 8900 6167 50  0000 C CNN
+F 0 "D23" H 8900 6167 50  0000 C CNN
 F 1 "3.3v Zener" H 8900 6076 50  0000 C CNN
 F 2 "Diode_SMD:D_SOD-123" H 8900 5775 50  0001 C CNN
 F 3 "https://www.diodes.com/assets/Datasheets/ds18010.pdf" H 8900 5950 50  0001 C CNN
@@ -430,10 +430,10 @@ F 3 "https://www.diodes.com/assets/Datasheets/ds18010.pdf" H 8900 5950 50  0001 
 	0    -1   1    0   
 $EndComp
 $Comp
-L Diode:BZT52Bxx D21
+L Diode:BZT52Bxx D22
 U 1 1 61D73107
 P 8750 5950
-F 0 "D21" H 8750 6167 50  0000 C CNN
+F 0 "D22" H 8750 6167 50  0000 C CNN
 F 1 "3.3v Zener" H 8750 6076 50  0000 C CNN
 F 2 "Diode_SMD:D_SOD-123" H 8750 5775 50  0001 C CNN
 F 3 "https://www.diodes.com/assets/Datasheets/ds18010.pdf" H 8750 5950 50  0001 C CNN
@@ -441,10 +441,10 @@ F 3 "https://www.diodes.com/assets/Datasheets/ds18010.pdf" H 8750 5950 50  0001 
 	0    -1   1    0   
 $EndComp
 $Comp
-L Diode:BZT52Bxx D20
+L Diode:BZT52Bxx D21
 U 1 1 61D73101
 P 8600 5950
-F 0 "D20" H 8600 6167 50  0000 C CNN
+F 0 "D21" H 8600 6167 50  0000 C CNN
 F 1 "3.3v Zener" H 8600 6076 50  0000 C CNN
 F 2 "Diode_SMD:D_SOD-123" H 8600 5775 50  0001 C CNN
 F 3 "https://www.diodes.com/assets/Datasheets/ds18010.pdf" H 8600 5950 50  0001 C CNN
@@ -452,10 +452,10 @@ F 3 "https://www.diodes.com/assets/Datasheets/ds18010.pdf" H 8600 5950 50  0001 
 	0    -1   1    0   
 $EndComp
 $Comp
-L Diode:BZT52Bxx D19
+L Diode:BZT52Bxx D20
 U 1 1 61D730FB
 P 8450 5950
-F 0 "D19" H 8450 6167 50  0000 C CNN
+F 0 "D20" H 8450 6167 50  0000 C CNN
 F 1 "3.3v Zener" H 8450 6076 50  0000 C CNN
 F 2 "Diode_SMD:D_SOD-123" H 8450 5775 50  0001 C CNN
 F 3 "https://www.diodes.com/assets/Datasheets/ds18010.pdf" H 8450 5950 50  0001 C CNN
@@ -463,10 +463,10 @@ F 3 "https://www.diodes.com/assets/Datasheets/ds18010.pdf" H 8450 5950 50  0001 
 	0    -1   1    0   
 $EndComp
 $Comp
-L Diode:BZT52Bxx D18
+L Diode:BZT52Bxx D19
 U 1 1 61D730F5
 P 8300 5950
-F 0 "D18" H 8300 6167 50  0000 C CNN
+F 0 "D19" H 8300 6167 50  0000 C CNN
 F 1 "3.3v Zener" H 8300 6076 50  0000 C CNN
 F 2 "Diode_SMD:D_SOD-123" H 8300 5775 50  0001 C CNN
 F 3 "https://www.diodes.com/assets/Datasheets/ds18010.pdf" H 8300 5950 50  0001 C CNN
@@ -474,10 +474,10 @@ F 3 "https://www.diodes.com/assets/Datasheets/ds18010.pdf" H 8300 5950 50  0001 
 	0    -1   1    0   
 $EndComp
 $Comp
-L Diode:BZT52Bxx D17
+L Diode:BZT52Bxx D18
 U 1 1 61D730EF
 P 8150 5950
-F 0 "D17" H 8150 6167 50  0000 C CNN
+F 0 "D18" H 8150 6167 50  0000 C CNN
 F 1 "3.3v Zener" H 8150 6076 50  0000 C CNN
 F 2 "Diode_SMD:D_SOD-123" H 8150 5775 50  0001 C CNN
 F 3 "https://www.diodes.com/assets/Datasheets/ds18010.pdf" H 8150 5950 50  0001 C CNN
@@ -485,10 +485,10 @@ F 3 "https://www.diodes.com/assets/Datasheets/ds18010.pdf" H 8150 5950 50  0001 
 	0    -1   1    0   
 $EndComp
 $Comp
-L Diode:BZT52Bxx D16
+L Diode:BZT52Bxx D17
 U 1 1 61D730E9
 P 8000 5950
-F 0 "D16" H 8000 6167 50  0000 C CNN
+F 0 "D17" H 8000 6167 50  0000 C CNN
 F 1 "3.3v Zener" H 8000 6076 50  0000 C CNN
 F 2 "Diode_SMD:D_SOD-123" H 8000 5775 50  0001 C CNN
 F 3 "https://www.diodes.com/assets/Datasheets/ds18010.pdf" H 8000 5950 50  0001 C CNN
@@ -496,10 +496,10 @@ F 3 "https://www.diodes.com/assets/Datasheets/ds18010.pdf" H 8000 5950 50  0001 
 	0    -1   1    0   
 $EndComp
 $Comp
-L Diode:BZT52Bxx D15
+L Diode:BZT52Bxx D16
 U 1 1 61D730E3
 P 7850 5950
-F 0 "D15" H 7850 6167 50  0000 C CNN
+F 0 "D16" H 7850 6167 50  0000 C CNN
 F 1 "3.3v Zener" H 7850 6076 50  0000 C CNN
 F 2 "Diode_SMD:D_SOD-123" H 7850 5775 50  0001 C CNN
 F 3 "https://www.diodes.com/assets/Datasheets/ds18010.pdf" H 7850 5950 50  0001 C CNN
@@ -507,10 +507,10 @@ F 3 "https://www.diodes.com/assets/Datasheets/ds18010.pdf" H 7850 5950 50  0001 
 	0    -1   1    0   
 $EndComp
 $Comp
-L Diode:BZT52Bxx D14
+L Diode:BZT52Bxx D15
 U 1 1 61D61E77
 P 7700 5950
-F 0 "D14" H 7700 6167 50  0000 C CNN
+F 0 "D15" H 7700 6167 50  0000 C CNN
 F 1 "3.3v Zener" H 7700 6076 50  0000 C CNN
 F 2 "Diode_SMD:D_SOD-123" H 7700 5775 50  0001 C CNN
 F 3 "https://www.diodes.com/assets/Datasheets/ds18010.pdf" H 7700 5950 50  0001 C CNN
@@ -518,10 +518,10 @@ F 3 "https://www.diodes.com/assets/Datasheets/ds18010.pdf" H 7700 5950 50  0001 
 	0    -1   1    0   
 $EndComp
 $Comp
-L Diode:BZT52Bxx D13
+L Diode:BZT52Bxx D14
 U 1 1 61D54A26
 P 7550 5950
-F 0 "D13" H 7550 6167 50  0000 C CNN
+F 0 "D14" H 7550 6167 50  0000 C CNN
 F 1 "3.3v Zener" H 7550 6076 50  0000 C CNN
 F 2 "Diode_SMD:D_SOD-123" H 7550 5775 50  0001 C CNN
 F 3 "https://www.diodes.com/assets/Datasheets/ds18010.pdf" H 7550 5950 50  0001 C CNN
@@ -529,10 +529,10 @@ F 3 "https://www.diodes.com/assets/Datasheets/ds18010.pdf" H 7550 5950 50  0001 
 	0    -1   1    0   
 $EndComp
 $Comp
-L Diode:BZT52Bxx D12
+L Diode:BZT52Bxx D13
 U 1 1 61D4721B
 P 7400 5950
-F 0 "D12" H 7400 6167 50  0000 C CNN
+F 0 "D13" H 7400 6167 50  0000 C CNN
 F 1 "3.3v Zener" H 7400 6076 50  0000 C CNN
 F 2 "Diode_SMD:D_SOD-123" H 7400 5775 50  0001 C CNN
 F 3 "https://www.diodes.com/assets/Datasheets/ds18010.pdf" H 7400 5950 50  0001 C CNN
@@ -540,10 +540,10 @@ F 3 "https://www.diodes.com/assets/Datasheets/ds18010.pdf" H 7400 5950 50  0001 
 	0    -1   1    0   
 $EndComp
 $Comp
-L Diode:BZT52Bxx D11
+L Diode:BZT52Bxx D12
 U 1 1 61D2C3F3
 P 7250 5950
-F 0 "D11" H 7250 6167 50  0000 C CNN
+F 0 "D12" H 7250 6167 50  0000 C CNN
 F 1 "3.3v Zener" H 7250 6076 50  0000 C CNN
 F 2 "Diode_SMD:D_SOD-123" H 7250 5775 50  0001 C CNN
 F 3 "https://www.diodes.com/assets/Datasheets/ds18010.pdf" H 7250 5950 50  0001 C CNN
@@ -551,10 +551,10 @@ F 3 "https://www.diodes.com/assets/Datasheets/ds18010.pdf" H 7250 5950 50  0001 
 	0    -1   1    0   
 $EndComp
 $Comp
-L Diode:BZT52Bxx D10
+L Diode:BZT52Bxx D11
 U 1 1 61D1EF4D
 P 7100 5950
-F 0 "D10" H 7100 6167 50  0000 C CNN
+F 0 "D11" H 7100 6167 50  0000 C CNN
 F 1 "3.3v Zener" H 7100 6076 50  0000 C CNN
 F 2 "Diode_SMD:D_SOD-123" H 7100 5775 50  0001 C CNN
 F 3 "https://www.diodes.com/assets/Datasheets/ds18010.pdf" H 7100 5950 50  0001 C CNN
@@ -562,10 +562,10 @@ F 3 "https://www.diodes.com/assets/Datasheets/ds18010.pdf" H 7100 5950 50  0001 
 	0    -1   1    0   
 $EndComp
 $Comp
-L Diode:BZT52Bxx D9
+L Diode:BZT52Bxx D10
 U 1 1 61D0436E
 P 6950 5950
-F 0 "D9" H 6950 6167 50  0000 C CNN
+F 0 "D10" H 6950 6167 50  0000 C CNN
 F 1 "3.3v Zener" H 6950 6076 50  0000 C CNN
 F 2 "Diode_SMD:D_SOD-123" H 6950 5775 50  0001 C CNN
 F 3 "https://www.diodes.com/assets/Datasheets/ds18010.pdf" H 6950 5950 50  0001 C CNN
@@ -573,10 +573,10 @@ F 3 "https://www.diodes.com/assets/Datasheets/ds18010.pdf" H 6950 5950 50  0001 
 	0    -1   1    0   
 $EndComp
 $Comp
-L Diode:BZT52Bxx D8
+L Diode:BZT52Bxx D9
 U 1 1 61CF6BC1
 P 6800 5950
-F 0 "D8" H 6800 6167 50  0000 C CNN
+F 0 "D9" H 6800 6167 50  0000 C CNN
 F 1 "3.3v Zener" H 6800 6076 50  0000 C CNN
 F 2 "Diode_SMD:D_SOD-123" H 6800 5775 50  0001 C CNN
 F 3 "https://www.diodes.com/assets/Datasheets/ds18010.pdf" H 6800 5950 50  0001 C CNN
@@ -584,10 +584,10 @@ F 3 "https://www.diodes.com/assets/Datasheets/ds18010.pdf" H 6800 5950 50  0001 
 	0    -1   1    0   
 $EndComp
 $Comp
-L Diode:BZT52Bxx D7
+L Diode:BZT52Bxx D8
 U 1 1 62774536
 P 6650 5950
-F 0 "D7" H 6650 6167 50  0000 C CNN
+F 0 "D8" H 6650 6167 50  0000 C CNN
 F 1 "3.3v Zener" H 6650 6076 50  0000 C CNN
 F 2 "Diode_SMD:D_SOD-123" H 6650 5775 50  0001 C CNN
 F 3 "https://www.diodes.com/assets/Datasheets/ds18010.pdf" H 6650 5950 50  0001 C CNN
@@ -606,10 +606,10 @@ F 3 "" H 10050 6150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_US R7
+L Device:R_US R8
 U 1 1 61F8CAAF
 P 9150 4200
-F 0 "R7" V 8945 4200 50  0000 C CNN
+F 0 "R8" V 8945 4200 50  0000 C CNN
 F 1 "200" V 9036 4200 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 9190 4190 50  0001 C CNN
 F 3 "~" H 9150 4200 50  0001 C CNN
@@ -617,10 +617,10 @@ F 3 "~" H 9150 4200 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_US R8
+L Device:R_US R9
 U 1 1 61FEB34E
 P 9150 4300
-F 0 "R8" V 8945 4300 50  0000 C CNN
+F 0 "R9" V 8945 4300 50  0000 C CNN
 F 1 "200" V 9036 4300 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 9190 4290 50  0001 C CNN
 F 3 "~" H 9150 4300 50  0001 C CNN
@@ -628,10 +628,10 @@ F 3 "~" H 9150 4300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_US R9
+L Device:R_US R10
 U 1 1 61FFBC0F
 P 9150 4400
-F 0 "R9" V 8945 4400 50  0000 C CNN
+F 0 "R10" V 8945 4400 50  0000 C CNN
 F 1 "200" V 9036 4400 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 9190 4390 50  0001 C CNN
 F 3 "~" H 9150 4400 50  0001 C CNN
@@ -639,10 +639,10 @@ F 3 "~" H 9150 4400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_US R10
+L Device:R_US R11
 U 1 1 6200C5BE
 P 9150 4500
-F 0 "R10" V 8945 4500 50  0000 C CNN
+F 0 "R11" V 8945 4500 50  0000 C CNN
 F 1 "200" V 9036 4500 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 9190 4490 50  0001 C CNN
 F 3 "~" H 9150 4500 50  0001 C CNN
@@ -650,10 +650,10 @@ F 3 "~" H 9150 4500 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_US R11
+L Device:R_US R12
 U 1 1 6201CEB5
 P 9150 4600
-F 0 "R11" V 8945 4600 50  0000 C CNN
+F 0 "R12" V 8945 4600 50  0000 C CNN
 F 1 "200" V 9036 4600 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 9190 4590 50  0001 C CNN
 F 3 "~" H 9150 4600 50  0001 C CNN
@@ -661,10 +661,10 @@ F 3 "~" H 9150 4600 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_US R12
+L Device:R_US R13
 U 1 1 62040AE3
 P 9150 4700
-F 0 "R12" V 8945 4700 50  0000 C CNN
+F 0 "R13" V 8945 4700 50  0000 C CNN
 F 1 "200" V 9036 4700 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 9190 4690 50  0001 C CNN
 F 3 "~" H 9150 4700 50  0001 C CNN
@@ -672,10 +672,10 @@ F 3 "~" H 9150 4700 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_US R13
+L Device:R_US R14
 U 1 1 62040AE9
 P 9150 4800
-F 0 "R13" V 8945 4800 50  0000 C CNN
+F 0 "R14" V 8945 4800 50  0000 C CNN
 F 1 "200" V 9036 4800 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 9190 4790 50  0001 C CNN
 F 3 "~" H 9150 4800 50  0001 C CNN
@@ -683,10 +683,10 @@ F 3 "~" H 9150 4800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_US R14
+L Device:R_US R15
 U 1 1 62040AEF
 P 9150 4900
-F 0 "R14" V 8945 4900 50  0000 C CNN
+F 0 "R15" V 8945 4900 50  0000 C CNN
 F 1 "200" V 9036 4900 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 9190 4890 50  0001 C CNN
 F 3 "~" H 9150 4900 50  0001 C CNN
@@ -694,10 +694,10 @@ F 3 "~" H 9150 4900 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_US R15
+L Device:R_US R16
 U 1 1 62040AF5
 P 9150 5000
-F 0 "R15" V 8945 5000 50  0000 C CNN
+F 0 "R16" V 8945 5000 50  0000 C CNN
 F 1 "200" V 9036 5000 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 9190 4990 50  0001 C CNN
 F 3 "~" H 9150 5000 50  0001 C CNN
@@ -705,10 +705,10 @@ F 3 "~" H 9150 5000 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_US R16
+L Device:R_US R17
 U 1 1 62040AFB
 P 9150 5100
-F 0 "R16" V 8945 5100 50  0000 C CNN
+F 0 "R17" V 8945 5100 50  0000 C CNN
 F 1 "200" V 9036 5100 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 9190 5090 50  0001 C CNN
 F 3 "~" H 9150 5100 50  0001 C CNN
@@ -716,10 +716,10 @@ F 3 "~" H 9150 5100 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_US R17
+L Device:R_US R18
 U 1 1 620537F2
 P 9150 5200
-F 0 "R17" V 8945 5200 50  0000 C CNN
+F 0 "R18" V 8945 5200 50  0000 C CNN
 F 1 "200" V 9036 5200 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 9190 5190 50  0001 C CNN
 F 3 "~" H 9150 5200 50  0001 C CNN
@@ -727,10 +727,10 @@ F 3 "~" H 9150 5200 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_US R18
+L Device:R_US R19
 U 1 1 620537F8
 P 9150 5300
-F 0 "R18" V 8945 5300 50  0000 C CNN
+F 0 "R19" V 8945 5300 50  0000 C CNN
 F 1 "200" V 9036 5300 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 9190 5290 50  0001 C CNN
 F 3 "~" H 9150 5300 50  0001 C CNN
@@ -738,10 +738,10 @@ F 3 "~" H 9150 5300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_US R19
+L Device:R_US R20
 U 1 1 620537FE
 P 9150 5400
-F 0 "R19" V 8945 5400 50  0000 C CNN
+F 0 "R20" V 8945 5400 50  0000 C CNN
 F 1 "200" V 9036 5400 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 9190 5390 50  0001 C CNN
 F 3 "~" H 9150 5400 50  0001 C CNN
@@ -749,10 +749,10 @@ F 3 "~" H 9150 5400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_US R20
+L Device:R_US R21
 U 1 1 62053804
 P 9150 5500
-F 0 "R20" V 8945 5500 50  0000 C CNN
+F 0 "R21" V 8945 5500 50  0000 C CNN
 F 1 "200" V 9036 5500 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 9190 5490 50  0001 C CNN
 F 3 "~" H 9150 5500 50  0001 C CNN
@@ -760,10 +760,10 @@ F 3 "~" H 9150 5500 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_US R21
+L Device:R_US R22
 U 1 1 6205380A
 P 9150 5600
-F 0 "R21" V 8945 5600 50  0000 C CNN
+F 0 "R22" V 8945 5600 50  0000 C CNN
 F 1 "200" V 9036 5600 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 9190 5590 50  0001 C CNN
 F 3 "~" H 9150 5600 50  0001 C CNN
@@ -771,10 +771,10 @@ F 3 "~" H 9150 5600 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_US R22
+L Device:R_US R23
 U 1 1 620649FC
 P 9150 5700
-F 0 "R22" V 8945 5700 50  0000 C CNN
+F 0 "R23" V 8945 5700 50  0000 C CNN
 F 1 "200" V 9036 5700 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 9190 5690 50  0001 C CNN
 F 3 "~" H 9150 5700 50  0001 C CNN
@@ -849,10 +849,10 @@ F 3 "" H 5800 2800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_02x16_Odd_Even J3
+L Connector_Generic:Conn_02x16_Odd_Even J5
 U 1 1 61ABDF53
 P 9650 4900
-F 0 "J3" H 9700 5817 50  0000 C CNN
+F 0 "J5" H 9700 5817 50  0000 C CNN
 F 1 "Conn_02x16_Odd_Even" H 9700 5726 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_2x16_P2.54mm_Vertical" H 9650 4900 50  0001 C CNN
 F 3 "~" H 9650 4900 50  0001 C CNN
@@ -1123,7 +1123,7 @@ Wire Wire Line
 Wire Wire Line
 	2050 1600 2050 1650
 Wire Wire Line
-	700  1200 950  1200
+	700  1200 850  1200
 Connection ~ 2700 800 
 Wire Wire Line
 	3700 800  3700 1600
@@ -1296,10 +1296,10 @@ SCK0
 Text GLabel 9000 2750 0    50   Input ~ 0
 CS0
 $Comp
-L Connector_Generic:Conn_01x05 J6
+L Connector_Generic:Conn_01x05 J8
 U 1 1 61871C14
 P 3750 7200
-F 0 "J6" H 3830 7242 50  0000 L CNN
+F 0 "J8" H 3830 7242 50  0000 L CNN
 F 1 "Conn_01x05" H 3830 7151 50  0000 L CNN
 F 2 "Connectors_Phoenix:PhoenixContact_GMSTBVA-G_05x7.50mm_Vertical" H 3750 7200 50  0001 C CNN
 F 3 "~" H 3750 7200 50  0001 C CNN
@@ -1350,10 +1350,10 @@ Wire Wire Line
 Wire Wire Line
 	3250 7400 3550 7400
 $Comp
-L Connector_Generic:Conn_02x10_Odd_Even J5
+L Connector_Generic:Conn_02x10_Odd_Even J7
 U 1 1 6198E393
 P 6050 7050
-F 0 "J5" H 6100 7667 50  0000 C CNN
+F 0 "J7" H 6100 7667 50  0000 C CNN
 F 1 "Conn_02x10_Odd_Even" H 6100 7576 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_2x10_P2.54mm_Vertical" H 6050 7050 50  0001 C CNN
 F 3 "~" H 6050 7050 50  0001 C CNN
@@ -1488,10 +1488,10 @@ Wire Wire Line
 	9850 5200 10050 5200
 Connection ~ 10050 5300
 $Comp
-L Connector:Conn_Coaxial J4
+L Connector:Conn_Coaxial J6
 U 1 1 61D79A4C
 P 4650 6900
-F 0 "J4" H 4750 6875 50  0000 L CNN
+F 0 "J6" H 4750 6875 50  0000 L CNN
 F 1 "Conn_Coaxial" H 4750 6784 50  0000 L CNN
 F 2 "Connector_Coaxial:SMB_Jack_Vertical" H 4650 6900 50  0001 C CNN
 F 3 " ~" H 4650 6900 50  0001 C CNN
@@ -1516,10 +1516,10 @@ Wire Wire Line
 Wire Wire Line
 	3050 2800 3050 5200
 $Comp
-L Connector_Generic:Conn_01x24 J7
+L Connector_Generic:Conn_01x24 J3
 U 1 1 6187D72D
 P 2800 3900
-F 0 "J7" H 2718 5217 50  0000 C CNN
+F 0 "J3" H 2718 5217 50  0000 C CNN
 F 1 "Conn_01x24" H 2718 5126 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x24_P2.54mm_Vertical" H 2800 3900 50  0001 C CNN
 F 3 "~" H 2800 3900 50  0001 C CNN
@@ -1643,10 +1643,10 @@ Wire Wire Line
 Connection ~ 5350 5450
 Connection ~ 5350 4200
 $Comp
-L Connector_Generic:Conn_01x24 J8
+L Connector_Generic:Conn_01x24 J4
 U 1 1 61E76D2E
 P 5600 3900
-F 0 "J8" H 5680 3892 50  0000 L CNN
+F 0 "J4" H 5680 3892 50  0000 L CNN
 F 1 "Conn_01x24" H 5680 3801 50  0000 L CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x24_P2.54mm_Vertical" H 5600 3900 50  0001 C CNN
 F 3 "~" H 5600 3900 50  0001 C CNN
@@ -1753,4 +1753,38 @@ Connection ~ 5400 4500
 Wire Wire Line
 	5950 4600 5400 4600
 Connection ~ 5400 4600
+$Comp
+L Device:R_US R1
+U 1 1 617A5B00
+P 850 1450
+F 0 "R1" V 645 1450 50  0000 C CNN
+F 1 "?" V 736 1450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 890 1440 50  0001 C CNN
+F 3 "~" H 850 1450 50  0001 C CNN
+	1    850  1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 617A5B06
+P 850 1800
+F 0 "D1" H 843 2017 50  0000 C CNN
+F 1 "12V_POW" H 843 1926 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 850 1800 50  0001 C CNN
+F 3 "~" H 850 1800 50  0001 C CNN
+	1    850  1800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	850  1950 850  2100
+Wire Wire Line
+	850  1600 850  1650
+Wire Wire Line
+	850  2100 1450 2100
+Connection ~ 1450 2100
+Wire Wire Line
+	850  1300 850  1200
+Connection ~ 850  1200
+Wire Wire Line
+	850  1200 950  1200
 $EndSCHEMATC
