@@ -1301,7 +1301,7 @@ U 1 1 61871C14
 P 3750 7200
 F 0 "J6" H 3830 7242 50  0000 L CNN
 F 1 "Conn_01x05" H 3830 7151 50  0000 L CNN
-F 2 "Connectors_Phoenix:PhoenixContact_MCV-G_05x3.50mm_Vertical" H 3750 7200 50  0001 C CNN
+F 2 "Connectors_Phoenix:PhoenixContact_GMSTBVA-G_05x7.50mm_Vertical" H 3750 7200 50  0001 C CNN
 F 3 "~" H 3750 7200 50  0001 C CNN
 	1    3750 7200
 	1    0    0    -1  
@@ -1516,12 +1516,12 @@ Wire Wire Line
 Wire Wire Line
 	3050 2800 3050 5200
 $Comp
-L Connector_Generic:Conn_01x24 J?
+L Connector_Generic:Conn_01x24 J7
 U 1 1 6187D72D
 P 2800 3900
-F 0 "J?" H 2718 5217 50  0000 C CNN
+F 0 "J7" H 2718 5217 50  0000 C CNN
 F 1 "Conn_01x24" H 2718 5126 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x23_P2.54mm_Vertical" H 2800 3900 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x24_P2.54mm_Vertical" H 2800 3900 50  0001 C CNN
 F 3 "~" H 2800 3900 50  0001 C CNN
 	1    2800 3900
 	-1   0    0    -1  
@@ -1643,12 +1643,12 @@ Wire Wire Line
 Connection ~ 5350 5450
 Connection ~ 5350 4200
 $Comp
-L Connector_Generic:Conn_01x24 J?
+L Connector_Generic:Conn_01x24 J8
 U 1 1 61E76D2E
 P 5600 3900
-F 0 "J?" H 5680 3892 50  0000 L CNN
+F 0 "J8" H 5680 3892 50  0000 L CNN
 F 1 "Conn_01x24" H 5680 3801 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x23_P2.54mm_Vertical" H 5600 3900 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x24_P2.54mm_Vertical" H 5600 3900 50  0001 C CNN
 F 3 "~" H 5600 3900 50  0001 C CNN
 	1    5600 3900
 	1    0    0    -1  
