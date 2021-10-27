@@ -13,8 +13,8 @@ const int SCK0 = 13;
 #define VMIN          21844
 #define VMAX          65535
 
-int attackInterval = 100;
-int releaseInterval = 100;
+int attackInterval = 500;
+int releaseInterval = 500;
 byte header = 0b00000000; // first two 4 bits are 0000 -- disable toggle mode, enable write , then two blank
 byte address =1;   // this is just 4 bits but we will OR it with header
 word regi = 0b1100000000000000; // need the first 2 bits of the data word to be 11 to select the input data register
@@ -80,7 +80,7 @@ void setup() {
   Serial.begin(9600);
   pinMode (CS0, OUTPUT);SPI.begin();
   digitalWrite (CS0, HIGH);
-  SPI.beginTransaction(SPISettings(100000000, MSBFIRST, SPI_MODE1));
+  SPI.beginTransaction(SPISettings(140000000, MSBFIRST, SPI_MODE1));
 }
 
 void loop() {
