@@ -26,16 +26,16 @@
  * 15   AnalogInput1
  * 16   AnalogInput2
  * 17   AnalogInput3
- * 18   AnalogInput4
- * 19   AnalogInput5
+ * 18   AnalogInput4 i2c
+ * 19   AnalogInput5 i2c
  * 20   AnalogInput6
  * 21   AnalogInput7
  * 22   AnalogInput8
  * 23   AnalogInput9
  * 24   AnalogInput10
  * 25   AnalogInput11
- * 26   SPI_1 (MOSI)
- * 27   SPI_1 (SCK)
+ * 26   SPI_1 (MOSI) analog
+ * 27   SPI_1 (SCK)  analog
  * 28   
  * 29
  * 30
