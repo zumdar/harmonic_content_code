@@ -113,7 +113,7 @@ F 3 "" H 3050 6300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L test-lib:BA7810CP-E2 U3
+L CentralPCB-rescue:BA7810CP-E2-test-lib U3
 U 1 1 61610C90
 P 1800 7050
 F 0 "U3" H 1800 7405 50  0000 C CNN
