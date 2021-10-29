@@ -1,4 +1,4 @@
-17139578113389841
+17129854376278339
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -76306,48 +76306,6 @@ Zigbee_Module_MRF24J40MD
 0
 12
 12
-mainboard
-MF_Connectors-MICROUSB-RIGHT
-DESCRIPTION: PACKAGE FOR MICRO USB TYPE B CONNECTOR. BASED ON FCI 10118193-0001LF.
-DESCRIPTION: PACKAGE FOR MICRO USB TYPE B CONNECTOR. BASED ON FCI 10118193-0001LF.
-0
-11
-11
-mainboard
-castor_and_pollux
-
-
-0
-0
-0
-mainboard
-cc_by_sa
-
-
-0
-0
-0
-mainboard
-ermine
-
-
-0
-0
-0
-mainboard
-gemini
-
-
-0
-0
-0
-mainboard
-winterbloom
-
-
-0
-0
-0
 teensy2
 Teensy1.0
 11
