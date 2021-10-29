@@ -1773,8 +1773,6 @@ Connection ~ 850  1200
 Wire Wire Line
 	850  1200 950  1200
 Wire Wire Line
-	3350 6900 3350 7300
-Wire Wire Line
 	3550 7000 3100 7000
 $Comp
 L power:+12V #PWR017
@@ -1787,4 +1785,6 @@ F 3 "" H 3350 6850 50  0001 C CNN
 	1    3350 6850
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	3350 6850 3350 7300
 $EndSCHEMATC
