@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:CentralPCB-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -1056,7 +1057,7 @@ Wire Wire Line
 Wire Wire Line
 	3250 2000 3300 2000
 $Comp
-L teensy:Teensy4.1 U2
+L CentralPCB-rescue:Teensy4.1-teensy U2
 U 1 1 61AF984C
 P 4200 4950
 F 0 "U2" H 4200 7515 50  0000 C CNN
