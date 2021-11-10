@@ -24,7 +24,7 @@
  * Group 1 channel 13-15
  * Group 2 channel 16-23
  * Group 3 channel 24-31
- * Group 4 channel 32-39
+ * Group 4 channel 32-39f
  */
 
 #define SYNC1 12

@@ -52,11 +52,16 @@
  * 41   AnalogInput15
  */
 
+//DAC
+#define LDAC 0
+#define CLEAR 1
+#define RESET 2
+
 // SPI 0
-const int CS0 = 10;
-const int MISO0 = 12;
-const int MOSI0 = 11;
-const int SCK0 = 13;
+#define CS0 10
+#define MISO0 12;
+#define MOSI0 11;
+#define SCK0 13;
 
 // Analog Inputs
 const int AnalogInput0 = 14;
@@ -242,7 +247,7 @@ void loop() {
       break;
       
     case tune:
-      tuneOscillators()
+      tuneOscillators();
       delay(1000);
       curr_state = idle;
       break;
