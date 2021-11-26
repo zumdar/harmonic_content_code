@@ -1,5 +1,6 @@
 #include <SPI.h>
 #include <MIDI.h>
+#include <Wire.h>
 
 /*
  * References:
@@ -200,7 +201,13 @@ void userPlay()
 //Main Program-----------------------------------------------------------
 void setup() {
   Serial.begin(9600);
-  MIDI.begin();
+  MIDI.begin(); //MIDI serial
+  Wire.begin(); //I2C to visual Display
+  /*Wire.beginTransmission(9); // transmit to device #4
+  Serial.print(x);
+  Wire.write("x is ");        // sends five bytes
+  Wire.write(x);              // sends one byte  
+  Wire.endTransmission();    // stop transmitting*/
  
   //Output Setup
   pinMode(tuner, OUTPUT);
