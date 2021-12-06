@@ -1,4 +1,6 @@
 #include <SPI.h>
+#include <MIDI.h>
+#include <Wire.h>
 
 /*
  * References:
@@ -10,11 +12,11 @@
  * Pinouts
  * 0    SPI_1 (CS)
  * 1    SPI_1 (MISO)
- * 2
- * 3
- * 4
- * 5
- * 6
+ * 2    power LED
+ * 3    warning LED
+ * 4    Error LED
+ * 5    Comm LED (SPI)
+ * 6    Tune button
  * 7    MIDI (Receive)
  * 8    MIDI (Transmit)
  * 9
@@ -26,16 +28,16 @@
  * 15   AnalogInput1
  * 16   AnalogInput2
  * 17   AnalogInput3
- * 18   AnalogInput4
- * 19   AnalogInput5
+ * 18   AnalogInput4 i2c
+ * 19   AnalogInput5 i2c
  * 20   AnalogInput6
  * 21   AnalogInput7
  * 22   AnalogInput8
  * 23   AnalogInput9
  * 24   AnalogInput10
  * 25   AnalogInput11
- * 26   SPI_1 (MOSI)
- * 27   SPI_1 (SCK)
+ * 26   SPI_1 (MOSI) analog
+ * 27   SPI_1 (SCK)  analog
  * 28   
  * 29
  * 30
@@ -52,36 +54,28 @@
  * 41   AnalogInput15
  */
 
-// SPI 0
-const int CS1 = 10;
-const int MISO1 = 12;
-const int MOSI1 = 11;
-const int SCK1 = 13;
+//MIDI
+MIDI_CREATE_INSTANCE(HardwareSerial, Serial1, MIDI);
+#define HIGHEST_NOTE 72
+#define LOWEST_NOTE 24
+#define TUNE_NOTE 24
+const int numNotes = HIGHEST_NOTE - LOWEST_NOTE;
+const int noteStep = 1024/numNotes;
 
-// SPI 1
-const int CS1 = 0;
-const int MISO1 = 1;
-const int MOSI1 = 26;
-const int SCK1 = 27;
+// SPI 0
+const int CS0 = 10;
+const int MISO0 = 12;
+const int MOSI0 = 11;
+const int SCK0 = 13;
 
 // Analog Inputs
-const int AnalogInput0 = 14;
-const int AnalogInput1 = 15;
-const int AnalogInput2 = 16;
-const int AnalogInput3 = 17;
-const int AnalogInput4 = 18;
-const int AnalogInput5 = 19;
-const int AnalogInput6 = 20;
-const int AnalogInput7 = 21;
-const int AnalogInput8 = 22;
-const int AnalogInput9 = 23;
-const int AnalogInput10 = 24;
-const int AnalogInput11 = 25;
-const int AnalogInput12 = 38;
-const int AnalogInput13 = 39;
-const int AnalogInput14 = 40;
-const int AnalogInput15 = 41;
+const int AnalogInputs[] = {14,15,16,17,18,19,20,21,22,23,24,26,38,39,40,41};
 
+//Outputs
+const int tuner = 6;
+
+int songNotes[] = {43, 43, 50, 50, 52, 52, 50, 50, 48, 48, 47, 47, 45, 45, 43, 43 };
+int songNotes2[]= {43, 50, 50, 50, 52, 50, 50, 50, 48, 50, 47, 50, 45, 50, 43, 50 };
 
 //Private variables-----------------------------------------------------
 enum state {
@@ -91,8 +85,69 @@ enum state {
 };
 int curr_state;
 int inputTime;
+int attackStep = 5;
+int releaseStep = 5;
+int prevNote[] = {24, 24, 24, 24};
+static int prevAmp[] = {0, 0, 0, 0};
 
 //Private functions-----------------------------------------------------
+/* Sends data to display
+ * @param: oscil Oscillator number
+ * @param: pitch Pitch level
+ * @param: volume based on envelope
+ * @return: None
+ */
+void sendI2C(int oscil, int pitch, int vol)
+{
+  Wire.beginTransmission(9); // transmit to device #4
+  Serial.print(x);
+  Wire.write("a");
+  Wire.write(oscil); 
+  Wire.write(":");
+  Wire.write(pitch); 
+  Wire.write(":");
+  Wire.write(vol); 
+  Wire.endTransmission();    // stop transmitting
+}
+
+/* Plays Note and keeps track of current envelope
+ * @param: note Note Number MIDI
+ * @param: oscillator Oscillator number
+ * @return: None
+ */
+void playNote(int note, int oscillator)
+{
+  //If note being played
+  if(note != 24)
+  {
+    if(note != prevNote[oscillator])
+    {
+      MIDI.sendNoteOff(prevNote[oscillator], 100, oscillator+1);
+      MIDI.sendNoteOn(note, 100, oscillator+1);
+      prevNote[oscillator] = note;
+    }
+    //Attack
+    if (prevAmp[oscillator] < 120)
+    {
+      prevAmp[oscillator] += attackStep;
+      //send amp 
+    }
+  }
+  else    //if no note
+  {
+    //Release
+    if (prevAmp[oscillator] > 0)
+    {
+      prevAmp[oscillator] -= releaseStep;
+      //send amp
+    }
+    else
+    {
+      prevNote[oscillator] = 24;
+    }
+  }
+}
+ 
 /*
  * tunes oscillators
  * @param: None
@@ -100,6 +155,14 @@ int inputTime;
  */
 void tuneOscillators()
 {
+  MIDI.sendNoteOn(TUNE_NOTE, 100, 1);
+  MIDI.sendNoteOn(TUNE_NOTE, 100, 2);
+  MIDI.sendNoteOn(TUNE_NOTE, 100, 3);
+  MIDI.sendNoteOn(TUNE_NOTE, 100, 4);
+  digitalWrite(tuner, HIGH);
+  delay(200);
+  digitalWrite(tuner, LOW);
+  delay(30000); //30 second tuning time
   return;
 }
 
@@ -110,8 +173,13 @@ void tuneOscillators()
  */
 bool detectUserInput()
 {
-  //note thread
-  return true;
+  int inputThreshold = 50;
+  for(int i = 0; i < 4; i++)
+  {
+    if(inputThreshold <= analogRead(AnalogInputs[i]))
+      return true;
+  }
+  return false;
 }
 
 /*
@@ -121,8 +189,16 @@ bool detectUserInput()
  */
 void idlePlay()
 {
-  static noteIndex = 0;
-  //note thread
+  static int noteIndex = 0;
+  if (noteIndex == 16)
+    noteIndex = 0;
+  MIDI.sendNoteOn(songNotes[noteIndex], 100, 1);
+  MIDI.sendNoteOn(songNotes2[noteIndex], 100, 2);
+  delay(500);
+  MIDI.sendNoteOff(songNotes[noteIndex], 100, 1);
+  MIDI.sendNoteOff(songNotes2[noteIndex], 100, 2);
+  delay(100);
+  noteIndex++;
   return;
 }
 
@@ -133,43 +209,67 @@ void idlePlay()
  */
 void userPlay()
 {
-  //GetInput()
-  //ProcessInput()
-  //Envelope()
-  //SPI Output
+  for (int i = 0; i < 4; i++)
+  {
+    int input = analogRead(AnalogInputs[i]);
+    int note = input/noteStep + LOWEST_NOTE;
+    //Serial.println(note);
+    playNote(note, i);
+  }
   return;
 }
 
 //Main Program-----------------------------------------------------------
 void setup() {
-  SPI.beginTransaction(SPISettings(14000000, MSBFIRST, SPI_MODE0));
   Serial.begin(9600);
-  //inputs outputs
+  MIDI.begin(); //MIDI serial
+  Wire.begin(); //I2C to visual Display
+ 
+  //Output Setup
+  pinMode(tuner, OUTPUT);
+  digitalWrite(tuner, LOW);
+
+  //State Machine
   curr_state = idle;
+  MIDI.sendProgramChange(4, 1);
+  MIDI.sendNoteOn(TUNE_NOTE, 100, 1);
+  MIDI.sendNoteOn(TUNE_NOTE, 100, 2);
+  MIDI.sendNoteOn(TUNE_NOTE, 100, 3);
+  MIDI.sendNoteOn(TUNE_NOTE, 100, 4);
 }
 
 void loop() {
   switch (curr_state) {
     case idle:
       if (!detectUserInput())
-        Serial.print("");//idlePlay()
+      {
+        Serial.print("idle\n");
+        idlePlay();
+      }
       else
         curr_state = play;
       break;
       
     case tune:
-      //tuneOscillators()
+      Serial.print("tune");
+      tuneOscillators();
       delay(1000);
       curr_state = idle;
       break;
       
     case play:
+      Serial.println("play");
       if (detectUserInput())
+      {
         inputTime = millis();
+      }
       if (millis() - inputTime > 30000)
+      {
         curr_state = idle;
         break;
+      }
       userPlay();
       break;
   }
+  delay(10);
 }
