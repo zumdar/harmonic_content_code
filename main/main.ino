@@ -91,8 +91,29 @@ int prevNote[] = {24, 24, 24, 24};
 static int prevAmp[] = {0, 0, 0, 0};
 
 //Private functions-----------------------------------------------------
-/*
- * 
+/* Sends data to display
+ * @param: oscil Oscillator number
+ * @param: pitch Pitch level
+ * @param: volume based on envelope
+ * @return: None
+ */
+void sendI2C(int oscil, int pitch, int vol)
+{
+  Wire.beginTransmission(9); // transmit to device #4
+  Serial.print(x);
+  Wire.write("a");
+  Wire.write(oscil); 
+  Wire.write(":");
+  Wire.write(pitch); 
+  Wire.write(":");
+  Wire.write(vol); 
+  Wire.endTransmission();    // stop transmitting
+}
+
+/* Plays Note and keeps track of current envelope
+ * @param: note Note Number MIDI
+ * @param: oscillator Oscillator number
+ * @return: None
  */
 void playNote(int note, int oscillator)
 {
@@ -106,11 +127,11 @@ void playNote(int note, int oscillator)
       prevNote[oscillator] = note;
     }
     //Attack
-    /*if (prevAmp[oscillator] < 120)
+    if (prevAmp[oscillator] < 120)
     {
       prevAmp[oscillator] += attackStep;
       //send amp 
-    }*/
+    }
   }
   else    //if no note
   {
@@ -203,11 +224,6 @@ void setup() {
   Serial.begin(9600);
   MIDI.begin(); //MIDI serial
   Wire.begin(); //I2C to visual Display
-  /*Wire.beginTransmission(9); // transmit to device #4
-  Serial.print(x);
-  Wire.write("x is ");        // sends five bytes
-  Wire.write(x);              // sends one byte  
-  Wire.endTransmission();    // stop transmitting*/
  
   //Output Setup
   pinMode(tuner, OUTPUT);
