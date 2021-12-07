@@ -24,38 +24,38 @@
  * 11   SPI_0 (MOSI)
  * 12   SPI_0 (MISO)
  * 13   SPI_0 (SCK)
- * 14   AnalogInput0
- * 15   AnalogInput1
- * 16   AnalogInput2
- * 17   AnalogInput3
- * 18   AnalogInput4 i2c
- * 19   AnalogInput5 i2c
- * 20   AnalogInput6
- * 21   AnalogInput7
- * 22   AnalogInput8
- * 23   AnalogInput9
- * 24   AnalogInput10
- * 25   AnalogInput11
- * 26   SPI_1 (MOSI) analog
- * 27   SPI_1 (SCK)  analog
+ * 14   AnalogInput1 slider1 v 215-260
+ * 15   AnalogInput2 button11 v
+ * 16   AnalogInput3 button12 v
+ * 17   AnalogInput4 slider2 203-222
+ * 18   #AnalogInput5 sda
+ * 19   #AnalogInput6 scl
+ * 20   AnalogInput5 button21
+ * 21   AnalogInput6 button22
+ * 22   AnalogInput7 attack
+ * 23   AnalogInput8
+ * 24   AnalogInput9 slider3 210-237
+ * 25   AnalogInput10 button31
+ * 26   AnalogInput11 button32
+ * 27   AnalogInput12 slider4 205-220
  * 28   
  * 29
  * 30
  * 31
  * 32
- * 33
- * 34
- * 35
- * 36
+ * 33   Tuner1
+ * 34   Tuner2
+ * 35   Tuner3
+ * 36   Tuner4
  * 37
- * 38   AnalogInput12
- * 39   AnalogInput13
- * 40   AnalogInput14
- * 41   AnalogInput15
+ * 38   AnalogInput13 button41 v
+ * 39   AnalogInput14 button42 v
+ * 40   AnalogInput15 releaseKnob v
+ * 41   AnalogInput16
  */
 
 //MIDI
-MIDI_CREATE_INSTANCE(HardwareSerial, Serial1, MIDI);
+MIDI_CREATE_INSTANCE(HardwareSerial, Serial2, MIDI);
 #define HIGHEST_NOTE 72
 #define LOWEST_NOTE 24
 #define TUNE_NOTE 24
@@ -69,13 +69,25 @@ const int MOSI0 = 11;
 const int SCK0 = 13;
 
 // Analog Inputs
-const int AnalogInputs[] = {14,15,16,17,18,19,20,21,22,23,24,26,38,39,40,41};
+const int AnalogInputs[] = {15,16,20,21,25,26,38,39};
+const int Button11 = 15;
+const int Button12 = 16;
+const int Button21 = 20;
+const int Button22 = 21;
+const int Button31 = 25;
+const int Button32 = 26;
+const int Button41 = 38;
+const int Button42 = 39;
+const int attackKnob = 22;
+const int releaseKnob = 40;
 
 //Outputs
 const int tuner = 6;
 
-int songNotes[] = {43, 43, 50, 50, 52, 52, 50, 50, 48, 48, 47, 47, 45, 45, 43, 43 };
-int songNotes2[]= {43, 50, 50, 50, 52, 50, 50, 50, 48, 50, 47, 50, 45, 50, 43, 50 };
+int songNotes1[] = { 36, 35, 33, 33};
+int songNotes2[] = { 40, 38, 36, 36};
+int songNotes3[] = { 43, 43, 40, 41};
+int songNotes4[] = { 48, 47, 45, 45 };
 
 //Private variables-----------------------------------------------------
 enum state {
@@ -100,7 +112,6 @@ static int prevAmp[] = {0, 0, 0, 0};
 void sendI2C(int oscil, int pitch, int vol)
 {
   Wire.beginTransmission(9); // transmit to device #4
-  Serial.print(x);
   Wire.write("a");
   Wire.write(oscil); 
   Wire.write(":");
@@ -130,7 +141,22 @@ void playNote(int note, int oscillator)
     if (prevAmp[oscillator] < 120)
     {
       prevAmp[oscillator] += attackStep;
-      //send amp 
+      switch(oscillator)
+      {
+        case 0:
+          MIDI.sendControlChange(71, prevAmp[oscillator], oscillator+1);
+          break;
+        case 1:
+          MIDI.sendControlChange(72, prevAmp[oscillator], oscillator+1);
+          break;
+        case 2:
+          MIDI.sendControlChange(73, prevAmp[oscillator], oscillator+1);
+          break;
+        case 3:
+          MIDI.sendControlChange(74, prevAmp[oscillator], oscillator+1);
+          break;
+      }
+      delay(5);
     }
   }
   else    //if no note
@@ -139,7 +165,22 @@ void playNote(int note, int oscillator)
     if (prevAmp[oscillator] > 0)
     {
       prevAmp[oscillator] -= releaseStep;
-      //send amp
+      switch(oscillator)
+      {
+        case 0:
+          MIDI.sendControlChange(71, prevAmp[oscillator], oscillator+1);
+          break;
+        case 1:
+          MIDI.sendControlChange(72, prevAmp[oscillator], oscillator+1);
+          break;
+        case 2:
+          MIDI.sendControlChange(73, prevAmp[oscillator], oscillator+1);
+          break;
+        case 3:
+          MIDI.sendControlChange(74, prevAmp[oscillator], oscillator+1);
+          break;
+      }
+      delay(5);
     }
     else
     {
@@ -173,12 +214,11 @@ void tuneOscillators()
  */
 bool detectUserInput()
 {
-  int inputThreshold = 50;
-  for(int i = 0; i < 4; i++)
+  /*for(int i = 0; i < 9; i++)
   {
-    if(inputThreshold <= analogRead(AnalogInputs[i]))
+    if(digitalRead(AnalogInputs[i])==LOW)
       return true;
-  }
+  }*/
   return false;
 }
 
@@ -190,14 +230,30 @@ bool detectUserInput()
 void idlePlay()
 {
   static int noteIndex = 0;
-  if (noteIndex == 16)
+  if (noteIndex == 3)
     noteIndex = 0;
-  MIDI.sendNoteOn(songNotes[noteIndex], 100, 1);
+  int startTime = millis();
+  MIDI.sendNoteOn(songNotes1[noteIndex], 100, 1);
   MIDI.sendNoteOn(songNotes2[noteIndex], 100, 2);
-  delay(500);
-  MIDI.sendNoteOff(songNotes[noteIndex], 100, 1);
+  MIDI.sendNoteOn(songNotes3[noteIndex], 100, 3);
+  MIDI.sendNoteOn(songNotes4[noteIndex], 100, 4);
+  Serial.println(songNotes1[noteIndex]);
+  while (millis() - startTime < 5000)
+  {
+    if (detectUserInput())
+      return;
+    delay(5);
+  }
+  MIDI.sendNoteOff(songNotes1[noteIndex], 100, 1);
   MIDI.sendNoteOff(songNotes2[noteIndex], 100, 2);
-  delay(100);
+  MIDI.sendNoteOff(songNotes3[noteIndex], 100, 3);
+  MIDI.sendNoteOff(songNotes4[noteIndex], 100, 4);
+  while (millis() - startTime < 100)
+  {
+    if (detectUserInput())
+      return;
+    delay(5);
+  }
   noteIndex++;
   return;
 }
@@ -223,7 +279,17 @@ void userPlay()
 void setup() {
   Serial.begin(9600);
   MIDI.begin(); //MIDI serial
-  Wire.begin(); //I2C to visual Display
+  //Wire.begin(); //I2C to visual Display
+
+  //Input Setup
+  pinMode(Button11, INPUT);
+  pinMode(Button12, INPUT);
+  pinMode(Button21, INPUT);
+  pinMode(Button22, INPUT);
+  pinMode(Button31, INPUT);
+  pinMode(Button32, INPUT);
+  pinMode(Button41, INPUT);
+  pinMode(Button42, INPUT);  
  
   //Output Setup
   pinMode(tuner, OUTPUT);
@@ -247,7 +313,8 @@ void loop() {
         idlePlay();
       }
       else
-        curr_state = play;
+        Serial.print("n");
+        //curr_state = play;
       break;
       
     case tune:
