@@ -1,8 +1,10 @@
 # DOCNADO
+---
 
 This documentation site is created with docnado. I have gone down the rabbit hole trying different static site generators found on [this website](https://github.com/myles/awesome-static-generators). I tried [gitbook](https://www.gitbook.com/), [docusaurus](https://docusaurus.io/), [mkdocs](https://www.mkdocs.org/), [doctave](https://github.com/Doctave/doctave), and [docsify](https://docsify.js.org/#/). I am not a great command line operator or an expert web developer. I know just enough to get in trouble. 
 I found Docnado to be the simplist of all the options, and it reliable would work. 
 ---
+
 Here is the basics of how I got it to work, im paraphrasing from docnado [documentation site](https://heinventions.github.io/docnado-site/example-site/w/home.html)
 
 - you have to use the command line. I have a windows 10 machine. I use [GIT Bash](https://gitforwindows.org/) for everything needed. I think its a linux command line emulator but i really dont understand/know/care. 

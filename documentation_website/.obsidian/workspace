@@ -7,8 +7,11 @@
         "id": "ab1e105d1815de5d",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "README_how_to_create_website.md",
+            "mode": "preview"
+          }
         }
       }
     ],
@@ -65,6 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "README_how_to_create_website.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -84,6 +88,7 @@
   },
   "active": "ab1e105d1815de5d",
   "lastOpenFiles": [
+    "README_how_to_create_website.md",
     "docs/README_how_to_create_website.md",
     "docs/home.md",
     "docs/Technical Documentation/dac notes.md",
