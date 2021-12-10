@@ -1,0 +1,100 @@
+{
+  "main": {
+    "id": "76c9abf36c1682aa",
+    "type": "split",
+    "children": [
+      {
+        "id": "ab1e105d1815de5d",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "docs/README_how_to_create_website.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "92b0a2906c1ac32f",
+    "type": "split",
+    "children": [
+      {
+        "id": "addb3ad090b432ba",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fa59caf520174b45",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "530822e24a5d81bc",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "70f5cdafeb7c3b8f",
+    "type": "split",
+    "children": [
+      {
+        "id": "c12be362efdfe83a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8e1472181f5d7cc9",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "docs/README_how_to_create_website.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "ab1e105d1815de5d",
+  "lastOpenFiles": [
+    "docs/README_how_to_create_website.md",
+    "docs/home.md",
+    "docs/Technical Documentation/dac notes.md",
+    "docs/Technical Documentation/System Architecture.md",
+    "docs/Future Plans/futurePlans.md",
+    "docs/design/creative_considerations.md",
+    "docs/design/media/annotated - whole 3.png",
+    "docs/Technical Documentation/tuning.md"
+  ]
+}

@@ -1,6 +1,10 @@
 # harmonic_content_code
 code and software documentation for the Harmonic Content installation
 # teensy pinouts
+
+THESE ARE ALL OLD. NEED TO UPDATE
+
+
 3.3V pin --> out to DAC DVCC and pots VCC  
 GND --> DAC gnd, pots gnd, jacks gnd  
 *spi pins*  
