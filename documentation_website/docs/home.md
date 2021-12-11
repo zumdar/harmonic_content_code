@@ -15,8 +15,28 @@ This document serves as documentation for the design process for building an ele
 ## Overview
 A new art installation entitled 'Harmonic Content' has been proposed for the Van Leer building. It is a wall mounted musical instrument built to be played by paserbys. It is a novel way of incorporating electrical engineering disciplines with artistic practices and human-centered artistic practices. It invites people to play with it with a sense of whimsy and outlandishness. A central tenet of its inception is the concept of harmonic relationships and color relationships and how they can be related. This document will explore some of the technical and design challenges faced in the initial stages of construction of this installation. 
 
-## Fall 2021 PROGRESS UPDATE
+## Fall 2021  Harmonic Content ECE4723A Steve Kenny
 Our team has completed the full scale prototype and working model of Harmonic Content and displayed it for the Senior Design Capston Expo on December 7th, 2021. 
+
+### Fall 2021 Members
+Andrew Kim <br />
+Savannah Hearn <br />
+William Kennedy <br />
+Owen Rohm <br />
+
+### Reports
+Report 1 [.docx](assets/Report1.docx) [.pdf](assets/Report1.pdf) <br />
+Report 2 [.docx](assets/Report2.docx) [.pdf](assets/Report2.pdf) <br />
+Final Report [.docx](assets/Report1.docx) [.pdf](assets/Report1.pdf) <br />
 
 ![](media/gatech_model%20scale%20.png)
 **Figure 1. Early concept render of Harmonic Content**
+
+![](media/synth2.jpg)
+**Figure 2. Harmonic Content at Expo**
+
+![](media/synth3.jpg)
+**Figure 2. Harmonic Content being played**
+
+![](media/synth1.jpg)
+**Figure 3. Harmonic Content presenation**
