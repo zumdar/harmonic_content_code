@@ -131,6 +131,7 @@ void sendI2C(int oscil, int pitch, int vol)
  */
 void playNote(int note, int oscillator)
 {
+  static int iteration = 0;
   //If note being played
   if(note >= 24)
   {
@@ -193,6 +194,12 @@ void playNote(int note, int oscillator)
     else
       prevAmp[oscillator] = 0;
   }
+  iteration++;
+  if (iteration == 40)
+  {
+    sendI2C(oscillator, prevNote[oscillator], prevAmp[oscillator]);
+    iteration = 0;
+  }
 }
  
 /*
@@ -215,7 +222,7 @@ void tuneOscillators()
   digitalWrite(tuner2, LOW);
   digitalWrite(tuner3, LOW);
   digitalWrite(tuner4, LOW);
-  delay(10000); //10 second tuning time
+  delay(15000); //30 second tuning time
   return;
 }
 
@@ -335,7 +342,7 @@ void userPlay()
 void setup() {
   Serial.begin(9600);
   MIDI.begin(); //MIDI serial
-  //Wire.begin(); //I2C to visual Display
+  Wire.begin(); //I2C to visual Display
 
   //Input Setup
   pinMode(Button11, INPUT_PULLUP);
@@ -367,8 +374,9 @@ void setup() {
 }
 
 void loop() {
-  attackStep = analogRead(attackKnob)/10+1;
-  releaseStep = 102-analogRead(releaseKnob)/10+1;
+  attackStep = 5;//analogRead(attackKnob);
+  releaseStep = 5; //analogRead(releaseKnob);
+  
   //Serial.println(attackStep);
   //Serial.println(releaseStep);
   switch (curr_state) {
@@ -389,6 +397,10 @@ void loop() {
         prevAmp[1] = 0;
         prevAmp[2] = 0;
         prevAmp[3] = 0;
+        MIDI.sendControlChange(71, 0, 1);
+        MIDI.sendControlChange(72, 0, 1);
+        MIDI.sendControlChange(73, 0, 1);
+        MIDI.sendControlChange(74, 0, 1);
       }
       break;
       
@@ -405,7 +417,7 @@ void loop() {
       {
         inputTime = millis();
       }
-      if (millis() - inputTime > 30000)
+      if (millis() - inputTime > 300000)
       {
         curr_state = tune;
         break;
