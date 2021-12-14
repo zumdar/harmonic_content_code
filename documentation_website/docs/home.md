@@ -27,7 +27,7 @@ Owen Rohm <br />
 ### Reports
 Report 1 [.docx](assets/Report1.docx) [.pdf](assets/Report1.pdf) <br />
 Report 2 [.docx](assets/Report2.docx) [.pdf](assets/Report2.pdf) <br />
-Final Report [.docx](assets/Report1.docx) [.pdf](assets/Report1.pdf) <br />
+Final Report [.docx](assets/FinalReport.docx) [.pdf](assets/FinalReport1.pdf) <br />
 
 ![](media/gatech_model%20scale%20.png)
 **Figure 1. Early concept render of Harmonic Content**
