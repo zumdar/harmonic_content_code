@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "README_how_to_create_website.md",
+            "file": "docs/Spring 2021 documentation/documentation.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README_how_to_create_website.md",
+                "file": "docs/Spring 2021 documentation/documentation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,14 +88,15 @@
   },
   "active": "ab1e105d1815de5d",
   "lastOpenFiles": [
-    "README_how_to_create_website.md",
-    "docs/README_how_to_create_website.md",
+    "docs/Spring 2021 documentation/documentation.md",
     "docs/home.md",
-    "docs/Technical Documentation/dac notes.md",
-    "docs/Technical Documentation/System Architecture.md",
-    "docs/Future Plans/futurePlans.md",
+    "docs/assets/FinalReport.pdf",
+    "assets/FinalReport1.pdf.md",
     "docs/design/creative_considerations.md",
-    "docs/design/media/annotated - whole 3.png",
-    "docs/Technical Documentation/tuning.md"
+    "docs/Spring 2021 documentation/media/preppingLEDrings.jpg",
+    "docs/Spring 2021 documentation/media/readyToGlue.jpg",
+    "docs/Spring 2021 documentation/media/startingWiring.jpg",
+    "docs/Spring 2021 documentation/media/paintingPanel.jpg",
+    "docs/Spring 2021 documentation/media/almostDone.jpg"
   ]
 }

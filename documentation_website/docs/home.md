@@ -1,6 +1,6 @@
 title:      Harmonic Content
 desc:       A color and sound synthesizer playable installation 
-date:       2021/12/10
+date:       2021/12/15
 version:    2.0.0
 template:   document
 nav:        Home __-1__
@@ -27,7 +27,12 @@ Owen Rohm <br />
 ### Reports
 Report 1 [.docx](assets/Report1.docx) [.pdf](assets/Report1.pdf) <br />
 Report 2 [.docx](assets/Report2.docx) [.pdf](assets/Report2.pdf) <br />
-Final Report [.docx](assets/FinalReport.docx) [.pdf](assets/FinalReport1.pdf) <br />
+Final Report [.docx](assets/FinalReport.docx) [.pdf](assets/FinalReport.pdf) <br />
+
+## Files and Software
+The repo for the project can be found at [this](https://github.com/zumdar/harmonic_content_code) github. This repo contains all the design files, website files, and software that runs on the device. All software will be in harmonic_content_code/main. Also inside of this directory, there are examples, tests, and documents for different libraries and programs used inside of the project.
+
+There is wiring and hardware desciptions added to the software. Additionally, the files for the PCB and hardware design are also included in the CentralPCB and jack_pcb directories. The current main is the software currently in the instrument.
 
 ![](media/gatech_model%20scale%20.png)
 **Figure 1. Early concept render of Harmonic Content**

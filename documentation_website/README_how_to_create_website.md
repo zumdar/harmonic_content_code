@@ -19,7 +19,7 @@ OK... so now change files add stuff whatever. Make sure each new .md file has it
 I use [obsidian](https://obsidian.md/) to do the documentation. you can preview in there put images in easy and everything.  
 
 when you are ready to actually upload a site to the web (!!!) make sure it looks good by running it in the local host (do the 'docnado' command and check how it looks)
- - now just run 'docnado -html html_files' and it will spit everything out into a html_files folder.
+ - now just run 'docnado --html html_files' and it will spit everything out into a html_files folder.
  - ##  !!!!!!!! one caveat!! make sure you rename 'home.html' in the 'w' folder to be 'index.html'
 
 
